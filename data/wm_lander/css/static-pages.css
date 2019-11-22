@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* CSS Document */
+
+	#categoryPage { width:960px; font-family: 'Open Sans', sans-serif; margin:0 auto; text-align:left; }
+	#categoryPage a { color:gray; }
+		#categoryPage a:hover { text-decoration:underline; }
+		#leftSideBox { float:left; width:770px; min-height:100px; }
+			#subProductBox {}
+				.productBtn { float:left; width:185px; border:1px solid #cccccc; margin-right:5px; margin-bottom:10px; }
+					.productBtn:hover { -moz-box-shadow: 0px 0px 5px #c4c4c4; -webkit-box-shadow: 0px 0px 5px #c4c4c4; box-shadow: 0px 0px 5px #c4c4c4; }
+					.productBtnImg { height:185px; width:185px; text-align:center; }
+						.productBtnImg img { max-height:185px; max-width:185px; }
+					.productBtnText { padding:5px 10px; background: url(/lighting-data/static_pages/leftsidebar/static_categorybar.jpg) repeat-x; color:white; font-size:14px; }
+						.productBtnText:hover { text-decoration:underline; }
+						.productBtnText img { float:right; margin-top:3px; }
+			#infoGrayBox { background:#eeeeee; border:1px solid #cccccc; margin-right:13px; padding:20px; font-size:12px; line-height:20px; }
+				#infoGrayBox a { color:red; text-decoration:none; }
+					#infoGrayBox a:hover { color:blue; }
+			#textInfoBox { color:#666666; }
+				#textInfoMain { margin-right:13px; font-size:14px; line-height:20px; text-align:justify; margin-top:20px; }
+					#textInfoMain h1 { line-height:20px; font-size:20px; color:gray; }
+					#textInfoMain a { color:gray; }
+					#textInfoMain a:hover { text-decoration:underline; }
+				#textInfoSub { margin-right:13px; }
+					.textColumnSettings { width:360px; font-size:12px; }
+						.textColumnSettings h2 { font-size:16px; padding:0px; margin:0px; margin-bottom:10px; }
+						.subCatDesc { margin:40px 0; line-height:20px; font-size:14px; text-align:justify; }
+						#leftTextColumn { float:left; }
+						#rightTextColumn { float:right; }
+		#rightSideBox { float:right; border-bottom:1px solid #cccccc; }
+			.rightsideBannerBox { width:180px; border:1px solid #cccccc; border-bottom:0px; background:#eeeeee; }
+			.rightsideBannerBox:hover { -moz-box-shadow: 0px 0px 5px #c4c4c4; -webkit-box-shadow: 0px 0px 5px #c4c4c4; box-shadow: 0px 0px 5px #c4c4c4; }
+

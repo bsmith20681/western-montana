@@ -1,0 +1,1851 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <style>
+        html {
+          background:#f5eeda url(http://64.151.254.210/images/new_images/bg-body-gradient.gif) repeat-x; /*Background*/
+        }
+        body {
+            min-width:1016px;
+            margin:0;
+            color:#333;
+            font:11px Arial, Verdana, sans-serif;           /*Url below provides a solid bar that goes over the edges of the page, 2nd half to white page*/
+            background:url(http://www.hansenlighting.com/clients/hansen/images/Pixelgradient2.gif) repeat-y 50%;
+        }
+        img {
+            border-style:none;
+        }
+        a {
+            text-decoration:none;
+            color:#000;
+        }
+        a:hover {
+            text-decoration:underline;
+        }
+        input, textarea, select {
+            font:100% Arial, Verdana, sans-serif;
+            vertical-align:middle;
+        }
+        form, fieldset {
+            margin:0;
+            padding:0;
+            border-style:none;
+        }
+        #wrapper { /*This provides gradient sidebar to cover the solid bar that shows on edges of the page*/
+            background:url(http://www.hansenlighting.com/clients/hansen/images/Pixelgradient2.gif) no-repeat 50% 0;
+        }
+        a.hidden {
+            position:absolute;
+            top:0;
+            left:-9999px;
+        }
+        .wrapper-holder {
+            padding:132px 0 0;
+            margin:0 auto;
+            width:1016px;
+            position:relative;
+        }
+        .logo {
+            margin:0;
+            position:absolute;
+            z-index:999;
+            top:7px;
+            left:11px;
+            width:320px;
+            height:73px;
+            text-indent:-9999px;
+            overflow:hidden;
+            background:url(/lighting-data/images/logo.gif) no-repeat;
+        }
+        .logo a {
+            display:block;
+            height:100%;
+        }
+        #header {
+            position:absolute;
+            top:0;
+            left:0;
+            width:1016px;
+            overflow:hidden;
+            color:#152b41;
+            font-size:12px;
+            line-height:16px;
+        }
+        #header a {
+            color:#152b41;
+        }
+        .topbar {
+            overflow:hidden;
+            height:1%;
+            padding:3px 5px 30px 0;
+        }
+        .topbar dl {
+            color:#000;
+            margin:0 0 0 11px;
+            float:right;
+            word-spacing:-1px;
+        }
+        .topbar dt {
+            display:inline;
+        }
+        .topbar dd {
+            display:inline;
+            margin:0;
+        }
+        .topbar ul {
+            overflow:hidden;
+            float:right;
+            list-style:none;
+            padding:0;
+            margin:0;
+        }
+        .topbar li {
+            float:left;
+            margin:0 -5px 0 5px;
+            padding:0 14px;
+            background:url(http://64.151.254.210/images/new_images/bullet-topbar.gif) no-repeat 100% 7px;
+        }
+        .userbar {
+            overflow:hidden;
+            height:1%;
+        }
+        .userbar ul {
+            font-weight:bold;
+            float:right;
+            list-style:none;
+            padding:13px 6px 0 10px;
+            margin:0;
+        }
+        .userbar li {
+            float:left;
+            padding:0 0 0 11px;
+            background:url(http://64.151.254.210/images/new_images/separator-userbar.gif) no-repeat 0 4px;
+        }
+        .userbar .cart {
+            padding:0 10px 0 26px;
+            background:url(http://64.151.254.210/images/new_images/ico-cart.gif) no-repeat 0 2px;
+        }
+        .userbar a {
+            text-decoration:underline;
+        }
+        .userbar a:hover {
+            text-decoration:none;
+        }
+        .search-form fieldset {
+            float:right;
+            overflow:hidden;
+            width:300px;
+            height:32px;
+            padding:10px 0 0 16px;
+            background:url(http://64.151.254.210/images/new_images/bg-search.gif) no-repeat;
+        }
+        .search-form .text {
+            float:left;
+            width:233px;
+            height:25px;
+            margin:0 7px 0 0;
+            background:url(http://64.151.254.210/images/new_images/bg-searchtext.gif) no-repeat;
+        }
+        * html .search-form .text {
+            margin-right:4px;
+        }
+        .search-form .text input {
+            float:left;
+            padding:5px 10px;
+            font-size:14px;
+            margin:0;
+            width:213px;
+            border:none;
+            background:none;
+        }
+        .search-form .btn {
+            margin:0;
+            padding:0;
+            border:none;
+            width:51px;
+            height:25px;
+            color:#152b41;
+            cursor:pointer;
+            background:url(http://64.151.254.210/images/new_images/btn-search.gif) no-repeat;
+        }
+        #navbar {postion:absolute; margin: 0 auto; width:1116px; height: 40px; background:url(http://www.hansenlighting.com/clients/hansen/images/SelectiveBar.gif) no-repeat;}
+        #nav {
+            list-style:none;
+            margin-top:-40px;
+            overflow:hidden;
+            padding: 0 0 0 32px;
+            height: 40px;
+            width:1116px;
+            z-index: 1000;
+            font:bold 12px "Trajan Pro", Georgia, "Times New Roman", Times, serif;
+        }
+        #nav li {
+            float:left;
+            margin:0;
+        }
+        #nav a {
+            color:#fff;
+            float:left;
+            padding:12px 13px 12px 13px;
+        }
+       
+       .category-area li a:hover, .category-area img:hover {color:purple; text-decoration:none; cursor: pointer;}
+       
+        #nav a:hover,  #nav .active a {
+            color:#083d71;
+            text-decoration:none;
+            background:url(http://64.151.254.210/images/new_images/bg-nav-hover.gif) repeat-x 0 1px;
+        }
+        #main {
+            overflow:hidden;
+            height:1%;
+            background:url(http://64.151.254.210/images/new_images/bg-main.gif) repeat-x;
+        }
+        .main-holder {
+            overflow:hidden;
+            height:1%;
+            margin:-2px 0 -10px;
+            padding:0 8px 0 0;
+        }
+     
+          #homepage {
+           position:absolute;
+          display:block; 
+          background-image:url('http://www.hansenlighting.com/clients/hansen/images/HPButton2.gif');
+          background-repeat:no-repeat; 
+          border-width: 1px 2px 2px 1px ;
+          margin: 370px 7px 20px 848px;
+          padding-top: 15px;
+          width: 145px;
+          height: 60px;
+
+          }
+          
+          #content4 {
+          position:absolute;
+          display:block; 
+          background-image:url('http://www.hansenlighting.com/clients/hansen/images/OurCompany1.gif');
+          background-repeat:no-repeat; 
+          margin: -100px 0 0 800px;
+          width: 150px;
+          height: 300px;
+          padding-right:10px;
+          font-size: 11px;
+        }
+          #content3 {
+          position:absolute;
+          display:block; 
+          border-width: 1px 1px 1px 1px ; 
+          margin: -50px 7px 20px 265px;
+          width: 510px;
+          height: 725px;
+          font-size: 17px;
+        }
+        #content2 {
+
+          display:block; 
+          border: 1px solid #A4CFE5;
+          border-width: 1px 1px 1px 1px ; 
+          padding: 130px 20px 0 30px; 
+          background-image:url('http://www.hansenlighting.com/clients/hansen/images/helpcenterimage.gif');
+          background-repeat:no-repeat; 
+          margin: 0 7px 7px 7px;
+          width: 952px;
+          height: 365px;
+
+        }
+        #content {
+          display:block; 
+          padding: 0 10px 0 10px; 
+          background-image:url('http://www.hansenlighting.com/clients/hansen/images/FAQ.gif');
+          background-repeat:no-repeat; 
+          margin: -104px 7px 0 -20px;
+          width: 240px;
+          font-size: 11px;
+          height:420px;
+        }
+        * html .visual-holder .pricematch {
+            margin-bottom:8px;
+        }
+        *+ html .visual-holder .pricematch {
+            margin-bottom:8px;
+        }
+        .visual-holder .pricematch p {
+            margin:0 0 -1px;
+        }
+        * html .visual-holder .pricematch p {
+            margin:0 0 -8px;
+        }
+        *+ html .visual-holder .pricematch p {
+            margin:0 0 -8px;
+        }
+        .visual-holder .pricematch .small {
+            display:block;
+            margin:-3px 0 0;
+            font-size:14px;
+            line-height:18px;
+            letter-spacing:-1px;
+        }
+        .visual-holder .dayreturns {
+            font:bold 18px/26px "Trajan Pro", Georgia, "Times New Roman", Times, serif;
+            padding:16px 10px 19px 24px;
+            margin:0 0 9px;
+        }
+        * html .visual-holder .dayreturns {
+            margin-bottom:6px;
+        }
+        *+ html .visual-holder .dayreturns {
+            margin-bottom:6px;
+        }
+        .visual-holder .dayreturns p {
+            margin:0 0 -3px;
+        }
+        * html .visual-holder .dayreturns p {
+            margin:0 0 -10px;
+        }
+        *+ html .visual-holder .dayreturns p {
+            margin:0 0 -10px;
+        }
+        .visual-holder .freeshipping {
+            font:bold 20px/26px "Trajan Pro", Georgia, "Times New Roman", Times, serif;
+            padding:13px 10px 13px 28px;
+        }
+        .visual-holder .freeshipping .small {
+            display:block;
+            margin:-4px 0 0;
+            font:italic 13px/16px Arial, Helvetica, sans-serif;
+        }
+        .visual-holder .freeshipping p {
+            margin:0 0 -2px;
+        }
+        * html .visual-holder .freeshipping p {
+            margin:0 0 -9px;
+        }
+        *+ html .visual-holder .freeshipping p {
+            margin:0 0 -9px;
+        }
+        .visual-holder .box .more {
+            color:#083d71;
+            font:italic 12px/16px Arial, Helvetica, sans-serif;
+            padding:0 17px 0 0;
+            background:url(http://64.151.254.210/images/new_images/arrow-more.gif) no-repeat 100% 0;
+            letter-spacing:-1px;
+            word-spacing:4px;
+        }
+        .category-area {
+            overflow:hidden;
+            width:906px;
+            padding:0 5px 9px;
+        }
+        .category-area h2 {
+            margin:0 0 6px;
+            font:bold 15px/20px "Trajan Pro", Georgia, "Times New Roman", Times, serif;
+            color:#083d71;
+        }
+        .category-area ul {
+            overflow:hidden;
+            width:950px;
+            list-style:none;
+            padding:0;
+            margin:0;
+            font:bold 12px/13px "Trajan Pro", Georgia, "Times New Roman", Times, serif;
+        }
+        .category-area li {
+            float:left;
+            height:105px;
+            width:97px;
+            margin:0 4px 0 0;
+            background:url(http://64.151.254.210/images/new_images/bg-category.gif) no-repeat 0 100%;
+        }
+        .category-area img {
+            vertical-align:top;
+        }
+        .category-area .box {
+            display:table;
+            height:35px;
+            width:97px;
+        }
+        * html .category-area .box {
+            position:relative;
+        }
+        *+ html .category-area .box {
+            position:relative;
+        }
+        .category-area .holder {
+            width:100%;
+            display:table-cell;
+            vertical-align:middle;
+            text-align:center;
+        }
+        .category-area a {
+            color:#083d71;
+        }
+        * html .category-area .holder {
+            position:absolute;
+            top:50%;
+        }
+        *+ html .category-area .holder {
+            position:absolute;
+            top:50%;
+        }
+        * html .category-area .holder a {
+            position:relative;
+            top:-50%;
+        }
+        *+ html .category-area .holder a {
+            position:relative;
+            top:-50%;
+        }
+        .featuring {
+            overflow:hidden;
+            height:1%;
+            padding:0 0 0 6px;
+            color:#3b3b3b;
+            font:11px/16px Arial, Helvetica, sans-serif;
+        }
+        .featuring .title, .featuring .more {
+            float:left;
+            font-weight:normal;
+        }
+        .featuring ul {
+            list-style:none;
+            padding:0;
+            margin:0;
+            float:left;
+        }
+        .featuring li {
+            float:left;
+            padding:0 2px;
+        }
+        .featuring a {
+            color:#083d71;
+            text-decoration:underline;
+        }
+        .featuring a:hover {
+            text-decoration:none;
+        }
+        .breadcrumbs {
+            list-style:none;
+            padding:4px 5px 16px;
+            margin:0;
+            overflow:hidden;
+            height:1%;
+            font-size:12px;
+            line-height:16px;
+            color:#152b41;
+        }
+        .breadcrumbs li {
+            display:inline;
+        }
+        .breadcrumbs a {
+            color:#152b41;
+        }
+        .item-area {
+            overflow:hidden;
+            width:660px;
+            margin:0 auto;
+            background:url(http://64.151.254.210/images/new_images/bg-item-area.gif) repeat-y -660px 0;
+        }
+        .item-area .holder {
+            overflow:hidden;
+            width:670px;
+            padding:0 0 14px;
+            background:url(http://64.151.254.210/images/new_images/bg-item-area.gif) no-repeat 0 100%;
+        }
+        .item-area .box {
+            float:left;
+            width:148px;
+            padding:0 14px 0 5px;
+            color:#083d71;
+            text-align:center;
+            font-size:12px;
+            line-height:13px;
+        }
+        .item-area .heading {
+            background:url(http://64.151.254.210/images/new_images/bg-heading.gif) repeat-y;
+            margin:0 -5px 6px;
+        }
+        .item-area .heading-holder {
+            background:url(http://64.151.254.210/images/new_images/bg-heading.gif) no-repeat -158px 0;
+        }
+        .item-area .heading-frame {
+            background:url(http://64.151.254.210/images/new_images/bg-heading.gif) no-repeat -316px 100%;
+            overflow:hidden;
+            height:1%;
+            padding:13px 0 16px 8px;
+        }
+        .item-area .heading h2 {
+            margin:0;
+            text-align:center;
+            font:bold 12px/16px "Trajan Pro", Georgia, "Times New Roman", Times, serif;
+        }
+        .item-area .heading a {
+            font-size:12px;
+            line-height:16px;
+            color:#083d71;
+        }
+        .item-area .heading .arrow {
+            position:relative;
+            width:14px;
+            height:14px;
+            background:url(http://64.151.254.210/images/new_images/arrow-item-area.gif) no-repeat;
+        }
+        .item-area .box img {
+            display:block;
+            margin:0 auto 8px;
+        }
+        .item-area .box p {
+            margin:0;
+        }
+        .product-holder {
+            overflow:hidden;
+            height:1%;
+            padding:23px 0 0;
+        }
+        .inner .product-holder {
+            margin:0 0 -18px;
+        }
+        .inner2 .product-holder {
+            padding-top:14px;
+            margin-bottom:-15px;
+        }
+        .product-holder .block {
+            width:696px;
+            margin:0 auto 17px;
+            overflow:hidden;
+            background:url(http://64.151.254.210/images/new_images/bg-product-holder.gif) repeat-y;
+        }
+        .product-holder .holder {
+            overflow:hidden;
+            height:1%;
+            padding:0 0 19px;
+            background:url(http://64.151.254.210/images/new_images/bg-product-holder.gif) no-repeat -696px 100%;
+        }
+        .product-holder .heading {
+            background:url(http://64.151.254.210/images/new_images/product-heading.gif) repeat-y -1392px 0;
+            font:bold 13px/18px "Trajan Pro", Georgia, "Times New Roman", Times, serif;
+            color:#fff;
+        }
+        .product-holder .heading-holder {
+            background:url(http://64.151.254.210/images/new_images/product-heading.gif) no-repeat;
+        }
+        .product-holder .heading-frame {
+            padding:6px 19px 10px;
+            overflow:hidden;
+            height:1%;
+            background:url(http://64.151.254.210/images/new_images/product-heading.gif) no-repeat -696px 100%;
+        }
+        .product-holder .heading-frame h3 {
+            font-size:15px;
+            line-height:18px;
+            float:left;
+            margin:0;
+            width:500px;
+        }
+        .product-holder .heading-frame a {
+            float:right;
+            color:#fff;
+        }
+        .other-products {
+            overflow:hidden;
+            width:690px;
+            margin:4px 0 0 27px;
+        }
+        .other-products .row {
+            padding:0 0 23px;
+            overflow:hidden;
+            height:1%;
+        }
+        .other-products .column {
+            width:168px;
+            float:left;
+        }
+        .other-products .image {
+            min-height:204px;
+            text-align:left;
+        }
+        * html .other-products .image {
+            height:204px;
+            overflow:visible;
+        }
+        .other-products .link {
+            min-height:32px;
+        }
+        .other-products .price-cell {
+            min-height:32px;
+        }
+        .other-products .note {
+            min-height:32px;
+            color:#807e7e;
+        }
+        * html .other-products .note, * html .other-products .link, * html .other-products .price-cell {
+            height:32px;
+            overflow:visible;
+        }
+        .other-products .image img {
+            display:block;
+        }
+        .other-products .link a {
+            text-decoration:underline;
+            color:#505050;
+            font:bold 12px/16px Arial, Helvetica, sans-serif;
+        }
+        .other-products .link a:hover {
+            text-decoration:none;
+        }
+        .other-products .price {
+            color:#337ed6;
+            font-size:23px;
+            line-height:32px;
+        }
+        .other-products .note {
+            font-weight:bold;
+            line-height:16px;
+        }
+        .other-products p {
+            margin:0;
+        }
+        .product-holder .box {
+            float:left;
+            width:300px;
+            color:#3b3b3b;
+            line-height:22px;
+            padding:15px 0 13px 34px;
+        }
+        .product-holder .box p {
+            margin:0;
+        }
+        .product-holder .box a {
+            color:#083d71;
+            text-decoration:underline;
+        }
+        .product-holder .box a:hover {
+            text-decoration:none;
+        }
+        .review {
+            float:right;
+            width:685px;
+            overflow:hidden;
+        }
+        .review .heading {
+            background:url(http://64.151.254.210/images/new_images/bg-reviewheading.gif) repeat-y -1370px 0;
+        }
+        .review .heading-holder {
+            background:url(http://64.151.254.210/images/new_images/bg-reviewheading.gif) no-repeat;
+        }
+        .review .heading-frame {
+            background:url(http://64.151.254.210/images/new_images/bg-reviewheading.gif) no-repeat -685px 100%;
+            overflow:hidden;
+            height:1%;
+            padding:6px 13px 10px;
+            color:#fff;
+        }
+        .review .heading h3 {
+            font:bold 15px/18px "Trajan Pro", Georgia, "Times New Roman", Times, serif;
+            margin:0;
+        }
+        .review .other-products {
+            margin:4px 0 0 20px;
+        }
+        .product-info {
+            overflow:hidden;
+            height:1%;
+            padding:0 0 10px 18px;
+        }
+        .product-info .image-holder {
+            float:left;
+            width:254px;
+            position:relative;
+            padding:32px 0 30px;
+        }
+        .product-info .image-holder img {
+            float:right;
+        }
+        .product-info .btn-back {
+            position:absolute;
+            top:0;
+            left:0;
+            width:43px;
+            height:22px;
+            cursor:pointer;
+            text-indent:-9999px;
+            overflow:hidden;
+            background:url(http://64.151.254.210/images/new_images/btn-back.gif) no-repeat;
+        }
+        .product-info .btn-enlarge {
+            position:absolute;
+            top:100%;
+            left:0;
+            margin:-20px 0 0;
+            color:#337ed6;
+            text-decoration:underline;
+            font:bold 12px/16px Arial, Helvetica, sans-serif;
+        }
+        .product-info .btn-enlarge:hover {
+            text-decoration:none;
+        }
+        .product-info .info-block {
+            float:right;
+            width:613px;
+            overflow:hidden;
+            background:url(http://64.151.254.210/images/new_images/bg-infoblock.gif) repeat-y -613px 0;
+        }
+        .product-info .info-block .holder {
+            padding:0;
+            overflow:hidden;
+            height:1%;
+            background:url(http://64.151.254.210/images/new_images/bg-infoblock.gif) no-repeat 0 100%;
+        }
+        .product-info .heading {
+            height:68px;
+            padding:0 26px;
+            background:url(http://64.151.254.210/images/new_images/bg-infoblock-heading.gif) no-repeat;
+        }
+        .product-info .heading h2 {
+            margin:0;
+            color:#083d71;
+            font-size:21px;
+            line-height:68px;
+        }
+        .product-info .inner-holder {
+            overflow:hidden;
+            height:1%;
+            padding:4px 16px 16px 28px;
+        }
+        .product-info dl {
+            margin:0;
+            float:left;
+            width:310px;
+        }
+        .product-info dt {
+            color:#337ed6;
+            font:bold 12px/16px Arial, Helvetica, sans-serif;
+            float:left;
+            width:106px;
+        }
+        .product-info dd {
+            margin:0;
+            padding:0 0 17px;
+            float:left;
+            width:200px;
+            color:#505050;
+            font:bold 12px/17px Arial, Helvetica, sans-serif;
+        }
+        .product-info p {
+            margin:0;
+        }
+        .product-info .price {
+            font-size:23px;
+            line-height:23px;
+        }
+        .product-info .cart-box {
+            width:233px;
+            overflow:hidden;
+            float:right;
+            background:url(http://64.151.254.210/images/new_images/bg-cartbox.gif) repeat-y -233px 0;
+        }
+        .product-info .info-block .cart-box .holder {
+            background:url(http://64.151.254.210/images/new_images/bg-cartbox.gif) no-repeat -466px 0;
+        }
+        .product-info .cart-box .frame {
+            background:url(http://64.151.254.210/images/new_images/bg-cartbox.gif) no-repeat 0 100%;
+            overflow:hidden;
+            height:1%;
+            padding:13px 7px 23px 11px;
+        }
+        .product-info .cart-form fieidset {
+            padding:0;
+        }
+        .product-info .cart-form .row {
+            overflow:hidden;
+            height:1%;
+            padding:0 0 14px;
+        }
+        .product-info .cart-form label {
+            width:123px;
+            float:left;
+            padding:0 11px 0 0;
+            text-align:right;
+            color:#083d71;
+            font:bold 12px/17px Arial, Helvetica, sans-serif;
+        }
+        .product-info .cart-form select {
+            float:left;
+            width:40px;
+            height:20px;
+            padding:0;
+            margin:0;
+        }
+        .product-info .cart-form #include {
+            width:16px;
+            height:16px;
+            padding:0;
+            margin:18px 0 9px;
+        }
+        .product-info .cart-form .btn {
+            display:block;
+            margin:0 auto;
+            width:143px;
+            height:41px;
+            padding:0;
+            border:none;
+            cursor:pointer;
+            background:url(http://64.151.254.210/images/new_images/btn-addtocart.gif) no-repeat;
+        }
+        .product-info .cart-box ul {
+            list-style:none;
+            padding:36px 0 0;
+            margin:0;
+            overflow:hidden;
+            width:250px;
+            font-weight:bold;
+            line-height:24px;
+        }
+        .product-info .cart-box li {
+            float:left;
+            width:106px;
+            height:27px;
+            margin:0 3px 0 0;
+            text-align:center;
+            background:url(http://64.151.254.210/images/new_images/btn-cart-box.gif) no-repeat;
+        }
+        .product-info .cart-box ul a {
+            color:#152b41;
+        }
+        .product-block {
+            width:685px;
+            margin:0 auto 14px;
+            overflow:hidden;
+            background:url(http://64.151.254.210/images/new_images/bg-product-block.gif) repeat-y;
+        }
+        .product-block .holder {
+            background:url(http://64.151.254.210/images/new_images/bg-product-block.gif) no-repeat -685px 100%;
+            padding:0;
+            overflow:hidden;
+            height:1%;
+            color:#505050;
+            font-size:12px;
+            line-height:17px;
+        }
+        .product-block .heading {
+            overflow:hidden;
+            height:34px;
+            padding:0 0 0 15px;
+            background:url(http://64.151.254.210/images/new_images/bg-productblock-heading.gif) no-repeat;
+        }
+        .product-block h3 {
+            margin:0;
+            font:bold 15px/30px "Trajan Pro", Georgia, "Times New Roman", Times, serif;
+            color:#083d71;
+        }
+        .product-block .text {
+            overflow:hidden;
+            height:1%;
+            padding:6px 19px 4px;
+        }
+        .product-block p {
+            margin:0 0 17px;
+        }
+        .review-area {
+            overflow:hidden;
+            height:1%;
+            padding:6px 0 33px 16px;
+        }
+        .rating {
+            margin:0 14px 0 0;
+            float:left;
+        }
+        .rating-row {
+            overflow:hidden;
+            height:1%;
+            padding:0 0 17px 3px;
+        }
+        .rating-row strong {
+            float:left;
+            font-size:12px;
+            line-height:16px;
+            color:#337ed6;
+            padding:0 7px 0 0;
+        }
+        .star-rating {
+            font-size:0;
+            line-height:0;
+            list-style:none;
+            margin:0;
+            padding:0;
+            width:60px;
+            height:13px;
+            position:relative;
+            background:url(http://64.151.254.210/images/new_images/ico-stars.gif) repeat-x;
+        }
+        .star-rating li {
+            float:left;
+        }
+        .star-rating li a {
+            display:block;
+            width:12px;
+            height:13px;
+            text-decoration:none;
+            text-indent:-9000px;
+            z-index:2;
+            position:absolute;
+            padding:0;
+        }
+        .star-rating li a:hover, .star-rating li.active a {
+            background:url(http://64.151.254.210/images/new_images/ico-stars.gif) 0 100%;
+            z-index:1;
+            left:0;
+        }
+        .star-rating a.s05 {
+            left:0;
+        }
+        .star-rating a.s05:hover, .star-rating li.active a.s05 {
+            width:6px;
+        }
+        .star-rating a.s1 {
+            left:6px;
+        }
+        .star-rating a.s1:hover, .star-rating li.active a.s1 {
+            width:12px;
+        }
+        .star-rating a.s15 {
+            left:12px;
+        }
+        .star-rating a.s15:hover, .star-rating li.active a.s15 {
+            width:18px;
+        }
+        .star-rating a.s2 {
+            left:18px;
+        }
+        .star-rating a.s2:hover, .star-rating li.active a.s2 {
+            width:24px;
+        }
+        .star-rating a.s25 {
+            left:24px;
+        }
+        .star-rating a.s25:hover, .star-rating li.active a.s25 {
+            width:30px;
+        }
+        .star-rating a.s3 {
+            left:30px;
+        }
+        .star-rating a.s3:hover, .star-rating li.active a.s3 {
+            width:36px;
+        }
+        .star-rating a.s35 {
+            left:36px;
+        }
+        .star-rating a.s35:hover, .star-rating li.active a.s35 {
+            width:42px;
+        }
+        .star-rating a.s4 {
+            left:42px;
+        }
+        .star-rating a.s4:hover, .star-rating li.active a.s4 {
+            width:48px;
+        }
+        .star-rating a.s45 {
+            left:48px;
+        }
+        .star-rating a.s45:hover, .star-rating li.active a.s45 {
+            width:54px;
+        }
+        .star-rating a.s5 {
+            left:54px;
+        }
+        .star-rating a.s5:hover, .star-rating li.active a.s5 {
+            width:60px;
+        }
+        .review-area .post {
+            overflow:hidden;
+            height:1%;
+            padding:0 50px 20px 3px;
+            color:#505050;
+            font-size:12px;
+            line-height:17px;
+        }
+        .review-area .post .rating-row {
+            padding:0 0 3px;
+        }
+        .review-area .autor-row {
+            overflow:hidden;
+            height:1%;
+        }
+        .review-area .autor-row dl {
+            margin:0;
+        }
+        .review-area .autor-row dt {
+            display:inline;
+            font-weight:bold;
+        }
+        .review-area .autor-row dd {
+            display:inline;
+            margin:0;
+        }
+        .review-area .autor-row .date {
+            font-style:normal;
+        }
+        .review-area .text {
+            overflow:hidden;
+            height:1%;
+            padding:0;
+        }
+        .review-area .text p {
+            margin:0;
+        }
+        .yourreview-box {
+            width:657px;
+            overflow:hidden;
+            background:url(http://64.151.254.210/images/new_images/bg-yourreview-box.gif) repeat-y -1314px 0;
+        }
+        .yourreview-box .holder {
+            background:url(http://64.151.254.210/images/new_images/bg-yourreview-box.gif) no-repeat -657px 0;
+        }
+        .yourreview-box .frame {
+            background:url(http://64.151.254.210/images/new_images/bg-yourreview-box.gif) no-repeat 0 100%;
+            overflow:hidden;
+            height:1%;
+            padding:6px 15px 12px 21px;
+        }
+        .yourreview-box h4 {
+            margin:0;
+            color:#083d71;
+            font:bold 15px/22px "Trajan Pro", Georgia, "Times New Roman", Times, serif;
+        }
+        .review-form .row {
+            overflow:hidden;
+            height:1%;
+            padding:0 0 3px;
+        }
+        .review-form .box {
+            float:left;
+            width:209px;
+        }
+        .review-form .cell {
+            overflow:hidden;
+            height:1%;
+            padding:0 0 7px;
+        }
+        .review-form label {
+            float:left;
+            width:65px;
+            padding:0 3px 0 0;
+        }
+        .review-form .bg-text {
+            float:left;
+            width:140px;
+            height:23px;
+            background:url(http://64.151.254.210/images/new_images/bg-text-yourreview.gif) no-repeat;
+        }
+        .review-form .bg-text input {
+            float:left;
+            padding:4px 10px;
+            margin:0;
+            width:120px;
+            border:none;
+            background:none;
+        }
+        .review-form .comment {
+            float:left;
+            width:411px;
+        }
+        .review-form .comment label {
+            width:66px;
+            float:left;
+            text-align:right;
+            padding:0 10px 0 0;
+        }
+        .review-form .bg-textarea {
+            float:left;
+            width:335px;
+            height:53px;
+            background:url(http://64.151.254.210/images/new_images/bg-textarea-yourreview.gif) no-repeat;
+        }
+        .review-form .bg-textarea textarea {
+            float:left;
+            width:330px;
+            height:33px;
+            max-width:330px;
+            max-height:33px;
+            overflow:auto;
+            padding:0 0 0 5px;
+            margin:0;
+            border:none;
+            background:none;
+        }
+        .review-form .btn {
+            float:right;
+            padding:0;
+            margin:0;
+            width:94px;
+            height:24px;
+            cursor:pointer;
+            border:none;
+            background:url(http://64.151.254.210/images/new_images/btn-submit.gif) no-repeat;
+        }
+        #sidebar {
+            float:left;
+            width:185px;
+            overflow:hidden;
+            background:url(http://64.151.254.210/images/new_images/bg-sidebar.gif) repeat-y -185px 0;
+        }
+        .sidebar-holder {
+            padding:0;
+            height:1%;
+            overflow:hidden;
+            background:url(http://64.151.254.210/images/new_images/bg-sidebar.gif) no-repeat 0 100%;
+        }
+        #sidebar .accordion {
+            list-style:none;
+            padding:0;
+            margin:0 0 -2px;
+            overflow:hidden;
+            height:1%;
+        }
+        #sidebar .opener {
+            display:block;
+            height:26px;
+            overflow:hidden;
+            font:bold 13px/22px "Trajan Pro", Georgia, "Times New Roman", Times, serif;
+            color:#fff;
+            padding:2px 19px 0;
+            background:url(http://64.151.254.210/images/new_images/bg-heading-sidebar.gif) no-repeat;
+        }
+        #sidebar .slide ul {
+            list-style:none;
+            padding:0 5px 0 4px;
+            margin:0;
+            overflow:hidden;
+            height:1%;
+            font-size:12px;
+            line-height:16px;
+        }
+        #sidebar .slide li {
+            vertical-align:top;
+            margin:-1px 0 0;
+            padding:2px 14px 4px;
+            border-top:1px solid #dadada;
+        }
+        #sidebar .slide a {
+            color:#3b3b3b;
+        }
+        #sidebar .box {
+            overflow:hidden;
+            height:1%;
+            padding:0 0 14px;
+        }
+        #sidebar .title {
+            height:25px;
+            display:block;
+            font:bold 13px/22px "Trajan Pro", Georgia, "Times New Roman", Times, serif;
+            color:#fff;
+            padding:3px 19px 0;
+            background:url(http://64.151.254.210/images/new_images/bg-heading-sidebar.gif) no-repeat;
+        }
+        #sidebar .box fieldset {
+            overflow:hidden;
+            height:1%;
+        }
+        #sidebar .brand-form fieldset {
+            padding:4px 44px 13px 14px;
+        }
+        #sidebar .price-form fieldset {
+            padding:4px 44px 0 14px;
+        }
+        #sidebar .box .row {
+            overflow:hidden;
+            height:1%;
+            padding:0 0 11px;
+        }
+        #sidebar .box label {
+            float:left;
+            width:100%;
+            padding:0 0 6px 3px;
+        }
+        #sidebar .box select {
+            float:left;
+            width:122px;
+            height:20px;
+            padding:0;
+            margin:0;
+            color:#3b3b3b;
+        }
+        #sidebar .width, #sidebar .height {
+            overflow:hidden;
+            height:1%;
+            padding:4px 18px 18px;
+            color:#3b3b3b;
+            font-size:12px;
+            line-height:16px;
+        }
+        #sidebar .width p {
+            margin:0;
+        }
+        #sidebar .width img {
+            display:block;
+            margin:5px 0 0 -3px;
+        }
+        #sidebar .height {
+            padding:0 86px 0 17px;
+        }
+        #sidebar .height p {
+            margin:0;
+        }
+        #sidebar .height img {
+            float:right;
+            margin:0;
+        }
+        .item-holder {
+            overflow:hidden;
+            height:1%;
+            padding:16px 0 13px 5px;
+        }
+        .item-holder .box {
+            float:left;
+            overflow:hidden;
+            height:140px;
+            width:260px;
+            margin:0 26px 0 0;
+            font:bold 15px/20px "Trajan Pro", Georgia, "Times New Roman", Times, serif;
+            background:url(http://64.151.254.210/images/new_images/bg-itembox.gif) no-repeat 0 100%;
+        }
+        .item-holder .box img {
+            display:block;
+            margin:0;
+        }
+        .item-holder .box a {
+            color:#083d71;
+        }
+        .item-holder .box-inner {
+            display:table;
+            width:260px;
+            height:41px;
+            position:relative;
+        }
+        .item-holder .box-holder {
+            width:100%;
+            display:table-cell;
+            vertical-align:middle;
+            text-align:center;
+        }
+        * html .item-holder .box-holder {
+            position:absolute;
+            top:50%;
+        }
+        *+ html .item-holder .box-holder {
+            position:absolute;
+            top:50%;
+        }
+        * html .item-holder .box-holder a {
+            position:relative;
+            top:-50%;
+        }
+        *+ html .item-holder .box-holder a {
+            position:relative;
+            top:-50%;
+        }
+        .question-box {
+            float:left;
+            width:335px;
+            background:url(http://64.151.254.210/images/new_images/new_images/bg-question-box.gif) repeat-y -670px 0;
+        }
+        .question-box .holder {
+            background:url(http://64.151.254.210/images/new_images/new_images/bg-question-box.gif) no-repeat;
+        }
+        .question-box .frame {
+            background:url(http://64.151.254.210/images/new_images/new_images/bg-question-box.gif) no-repeat -335px 100%;
+            overflow:hidden;
+            height:1%;
+            padding:7px 19px 9px 21px;
+        }
+        .question-box .title {
+            display:block;
+            color:#083d71;
+            font:bold 17px/22px "Trajan Pro", Georgia, "Times New Roman", Times, serif;
+        }
+        .question-box .sub-title {
+            color:#3b3b3b;
+            display:block;
+            margin:-3px 0 6px;
+            font-size:12px;
+            line-height:16px;
+        }
+        .question-box .bg-textarea {
+            width:295px;
+            height:53px;
+            overflow:hidden;
+            margin:0 0 6px;
+            background:url(http://64.151.254.210/images/new_images/new_images/bg-textarea.gif) no-repeat;
+        }
+        .question-box .bg-textarea textarea {
+            width:290px;
+            height:47px;
+            max-width:290px;
+            max-height:47px;
+            padding:3px 0 0 5px;
+            margin:0;
+            float:left;
+            border:none;
+            overflow:auto;
+            background:none;
+        }
+        .question-box .btn {
+            overflow:hidden;
+            height:1%;
+            padding:0;
+            margin:0 0 0 -2px;
+        }
+        .question-box .btn input {
+            width:49px;
+            height:24px;
+            padding:0;
+            margin:0;
+            cursor:pointer;
+            float:left;
+            border:none;
+            background:url(http://64.151.254.210/images/new_images/new_images/btn-ask.gif) no-repeat;
+        }
+        .area-links {
+            overflow:hidden;
+            width:906px;
+            margin:0 0 6px 5px;
+            background:url(http://64.151.254.210/images/new_images/new_images/bg-area-links.gif) repeat-y -906px 0;
+        }
+        .area-links .holder {
+            background:url(http://64.151.254.210/images/new_images/new_images/bg-area-links.gif) no-repeat;
+        }
+        .area-links .frame {
+            background:url(http://64.151.254.210/images/new_images/new_images/bg-area-links.gif) no-repeat -1812px 100%;
+            overflow:hidden;
+            height:1%;
+            padding:11px 0 19px 131px;
+        }
+        .area-links .box {
+            float:left;
+            width:180px;
+            padding:0 11px 0 0;
+        }
+        .area-links .title {
+            color:#083d71;
+            font-size:17px;
+            line-height:22px;
+        }
+        .area-links ul {
+            list-style:none;
+            padding:0;
+            margin:0;
+            font-size:14px;
+            line-height:18px;
+        }
+        .area-links li {
+            padding:0 0 3px;
+            vertical-align:top;
+        }
+        .area-links a {
+            color:#3b3b3b;
+        }
+        .area-links-big {
+            background:#ebe5ce url(http://64.151.254.210/images/new_images/new_images/bg-area-links-big.gif) repeat-x;
+            width:921px;
+            padding:28px 0 16px 84px;
+            margin:0 0 2px 6px;
+            overflow:hidden;
+        }
+        .area-links-big .box {
+            float:left;
+            width:230px;
+        }
+        .area-links-big .title {
+            font-size:12px;
+            line-height:16px;
+            color:#3b3b3b;
+        }
+        .area-links-big ul {
+            list-style:none;
+            padding:0;
+            margin:0;
+            font-size:12px;
+            line-height:16px;
+        }
+        .area-links-big li {
+            padding:0 0 2px;
+            vertical-align:top;
+        }
+        .area-links-big a {
+            color:#3b3b3b;
+        }
+        #footer {
+            overflow:hidden;
+            height:1%;
+            text-align:center;
+            margin:0 6px;
+            padding:19px 0 30px;
+            font-size:15px;
+            line-height:20px;
+            border-top:3px solid #d9e9eb;
+        }
+        #footer p {
+            margin:0;
+        }
+        .footer-holder {
+            overflow:hidden;
+            padding:4px 0 0;
+            font-size:12px;
+            line-height:16px;
+        }
+        .footer-holder ul {
+            list-style:none;
+            padding:0;
+            margin:0;
+            display:inline;
+            overflow:hidden;
+        }
+        .footer-holder li {
+            display:inline;
+            padding:0 1px 0 5px;
+            background:url(http://64.151.254.210/images/new_images/new_images/separator-footer.gif) no-repeat 0 2px;
+        }
+        .footer-holder li:first-child {
+            background:none;
+        }
+        .logos {
+            list-style:none;
+            padding:5px 0 0;
+            margin:0;
+        }
+        * html .logos {
+            padding-left:3px;
+        }
+        *+ html .logos {
+            padding-left:3px;
+        }
+        .logos li {
+            display:inline;
+            padding:0 18px;
+        }
+        .logos img {
+            vertical-align:top;
+        }
+       #q1, #q2, #q3,#q4,#q5, #q6, #q7,#q8,#q9, #q10, #q11,#q12,#q13, #q14, #q15,#q16, #q17,#q18 {display:none;}
+           .visible {display:block;}
+           .hidden {display:none;}
+
+#facebook { position:absolute; margin:25px 0 0 400px; }
+#twitter { position:absolute; margin:25px 0 0 460px; }
+    </style>
+ 
+    <head>
+        <title>HansenLighting</title>
+        
+        <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17933629-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+        <SCRIPT  type="text/javascript">
+           function toggle_visibility(id) { 
+             var e = document.getElementById(id); 
+             if(e.style.display == 'block') 
+             e.style.display = 'none'; 
+             
+             else e.style.display = 'block';
+             }
+             
+             
+             function toggle(div)
+{
+var option=['q1','q2','q3','q4','q5','q6','q7','q8','q9','q10','q11','q12','q13','q14','q15','q16','q17','q18'];
+
+for(var i=0; i<option.length; i++)
+{ obj=document.getElementById(option[i]);
+obj.style.display=(option[i]==div) && !(obj.style.display=="block")? "block" : "none"; }
+}
+
+        </SCRIPT>
+    </head>
+
+    <body>
+                <div id="wrapper">
+                    <a class="hidden" href="#nav">Skip to navigation</a>
+                    <div class="wrapper-holder">
+                        <h1 class="logo"><a href="/index.php">HansenLighting</a></h1>
+                        <div id="main"><center style="font-size:40px;"><a name="hc">Help Center</a></center>
+                             <div id="homepage">
+                               <a href="http://www.hansenlighting.com/index.php" style="text-decoration: none;"><center style="font-size:15px; color:#0C326B;" ><b>Return to<br> Home Page</b></center></a>
+                             </div>
+                             <div id="content2"> 
+                                 <div id="content4">
+                                   <font color="#0C326B">
+                                    <center style="font-size:20px; padding-top:20px;">Our Company</center><br>                         
+                                    <ul><li><a href="#hc" onclick="toggle('q16');"><b>About Us</b></a><br></li>
+                                    <li><a href="#hc" onclick="toggle('q17');"><b>Contact Us</b></a><br></li>
+                                    <li><a href="#hc" onclick="toggle('q11');"><b>Showroom Hours</b></a><br></li>
+                                    <li><a href="#hc" onclick="toggle('q18');"><b>The Hansen Story</b></a><br></li></ul></br>
+                                    </font>                                                                   
+                                </div>                                                                                     
+                                <div id="content3">
+                                    <font color="#0C326B">
+                                    <div id="q1"  a name="question1"><center><h4>How does Hansen Lighting stand behind thier product?</h4></center>Hansen Light provides a lifetime warranty on all products ordered through our site.  Additionally we have a 365 day return policy for your convenience</div>
+                                    <div id="q2"  a name="question2"><center><h4>Where can I find an instruction sheet?</h4></center>Instructions come inside the box of the item you purchase.  You may also see the manufactures website for additional information.</div>
+                                    <div id="q3"><center><h4>Is my information kept private?</h4></center>Yes. We do not sell your information to outside parties. For more information, please see Hansen Lighting's Privacy Policy.</div>
+                                    <div id="q4"><center><h4>How long will it take to recieve my order?</h4></center>Delivery times are based on where you live.  The average delivery time is 6-8 business days.</div>
+                                    <div id="q5" ><center><h4>What is the estimated delivery time?</h4></center>Delivery times are based on where you live.  The average delivery time is 6-8 business days.</div>
+                                    <div id="q6"><center><h4>Where do I report a problem with your website?</h4></center>Please contact us via email to report any problems you are experiencing. Remember, the more details you provide, the faster we can get it fixed.<br><br>Email: jason@hansenlighting.com</div>
+                                    <div id="q7"><center><h4>How Can I get the best price?</h4>Call our store.  We guarantee to beat any price!</center></div>
+                                    <div id="q8"><center><h4>How can I cancel my order?</h4></center>Due to the time sensitive nature of order cancellations it is best for you contact us and talk to a support representative as soon as possible. <br><br>Number: 801-225-4459</div>
+                                    <div id="q9"><center><h4>Why buy from Hansen Lighting?</h4></center>Experience, expertise, service, and pricing.  Hansen Lighting has been delighting customers since we opened our doors in 1962.  We started as a "mom & pop shop" and have work diligently to keep that mom & pop feel.  By calling our store and/or ordering in bulk we can offer you special pricing otherwise not available online.</div>
+                                    <div id="q10" ><center><h4>Do you ship outside of the USA?</h4></center>Yes. We do ship out of the USA, though shipping may take up to 3-5 weeks.</div>
+                                    <div id="q11"><center><h4>Showroom Hours</h4> Monday - Friday 9 AM - 5 PM.</center></div>
+                                    <div id="q12"><center><h4>What Manufacturers does Hansen Lighting Carry?</h4>Hansen Lighting deals with all the major Manufacturers including: <br></center>
+                                          <table align="center" cellspacing="10" style="font-size:9px;">
+                                               <tr>
+                                                 <td><ul><li>Access</li><li>AF Lighting</li><li>American Florescent</li><li>Capitol</li><li>Classic</li><li>Corbett</li><li>Costco</li><li>Craftmade</li><li>Currey</li><li>Designer's Fountain</li><li>Dolan Designs</li><li>Elk Lighting</li><li>Emerson Fans</li><li>ETZ (Maxim)</li><li>Eurofase</li></ul></td> 
+                                                 <td> <ul><li>Fanimation</li><li>Fine Art Lamps</li><li>Forecast</li><li>Framberg</li><li>Fredrick Ramond</li><li>Golden</li><li>House of Troy</li><li>Hubbardton Forge</li><li>Hudson Valley</li><li>Hunter Fan Co.</li><li>Jeremiah</li><li>Justice Design</li><li>Kenroy International</li><li>Kichler</li><li>Kichler Landscape</li><li>Landmark</li></ul></td>
+                                                 <td> <ul><li>Lithonia Lighting</li><li>Livex Lighting</li><li>Maxim</li><li>Meyda Tiffany</li><li>Minka Ambience</li><li>Minka George Kovacs</li><li>Minka Great Outdoors</li><li>Minka Metropolitan</li><li>Minka-Aire</li><li>Minka-Lavery</li><li>Monte-Carlo</li><li>Murray Feiss</li><li>Nora</li><li>Nulco</li><li>Nuvo</li><li>Pacific Coast Lighting</li></ul></td>
+                                                 <td> <ul><li>Quoizel</li><li>Regency</li><li>Satco Products Inc.</li><li>Sea Gull</li><li>Sonneman</li><li>Tech Lighting</li><li>Thomas</li><li>Trans Globe</li><li>Troy</li><li>Utter Most</li><li>Vaxcel International</li><li>WAC Lighting Canada</li><li>Westinghouse</li><li>Woodbridge</li><li>World Imports</li><li>Yosemite Lighting</li></ul></td>
+                                               </tr>
+                                          </table>
+                                      
+                                      
+                                     </center></div>
+                                    <div id="q13"><center><h4>What Safety Measures do your fixtures carry?</h4></center>The safety of our customers is very important to us. Our fixtures carry the following safety measures: <br><br>UL, ADA, Darksky, and Energy Star.</div>
+                                    <div id="q14"><center><h4>Are your fixtures suitable for commercial use?</h4></center>Yes, many of our products are suitable for commercial use though it really depends on the product.</div>
+                                    <div id="q15"><center><h4>Does Hansen Lighting Have a Technical Support Line?</h4></center>Yes. If you have any questions, please contact us.<br><br> Number: 801-225-4459<br>email: jason@hansenlighting.com</div>
+                                    <div id="q16"><center><h4>About Us</h4></center>Experience, expertise, service, and pricing.  Hansen Lighting has been delighting customers since we opened our doors in 1962.  We started as a "mom & pop shop" and have work diligently to keep that mom & pop feel.  By calling our store and/or ordering in bulk we can offering you special pricing otherwise not available online.</div>
+                                    <div id="q17"><center><h4>Contact Us</h4>Our number: 801-225-4459<br>Email: jason@hansenlighting.com<br />922 N 1430 W Orem, UT 84057-6403</center></div>
+                                    <div id="q18" style="margin-top:-60px; font-size: 9px;"><center style="font-size: 16px;"><b>The Hansen Story</b></center><br>
+                                                  <b style="font-size:12px;">It all started with a vision.</b>
+                                                  John Robert was an inteligent man, who worked as an electrician in Souix City, Iowa and studied growth
+                                                  in areas all over the nation. He saw more potential in the small valley of Orem Utah than anywhere else.
+                                                  So he moved his family and opened up Roberts Electric in 1950 on the corner of State and Center street,
+                                                  surronded by fields.<br><br>
+                                                  
+                                                  In 1954 John brother Dave and their cousin Don Hansen joined the business and business was booming.
+                                                  Sadly just 5 years later in 1959 the steel strike which lasted over a year took its toll on many businesses
+                                                  in the community and Roberts electric went out of business.<br><br>
+                                                  
+                                                  Don Hansen was unswayed by the difficult times and knew that things would get better. He also saw
+                                                  a need for a top-tier service oreinted ligthing company. So he borrowed some money and opened up
+                                                  Hansen wholesale electric. And again business started to grow and grow.<br><br>
+                                                  
+                                                  <b style="font-size:12px;">A company on the move.</b>
+                                                  By 1966 Don needed even more help so he hired his Nephew Jeff Roberts who is still with Hansen
+                                                  Lighing today. As the businness continued grow they soon found they simply needed more space. So
+                                                  they moved from their small store at 1985 s State street to a 22,500 sq ft building at 934 n State street
+                                                  where they proudly displayed 2,000 lights.<br><br>
+                                                  
+                                                  <b style="font-size:12px;">A family member takes over.</b>
+                                                  As time went on Jeff Robert eventually took over ownership of Hansen Lighting. With years of lighting
+                                                  experience and a true passion for being on the cutting edge of technology and style, Jeff offered
+                                                  the people something no one else could match. Even today when the most difficult questions come up
+                                                  he is the go to source.<br><br>
+                                                  
+                                                  <b style="font-size:12px;">New Partners & Familiar Values.</b>
+                                                  In 2004, Jason Petersen joined the Hansen Lighting partnership. Bringing nearly a decade of computer
+                                                  programming and process design experience, Jason helped turn Hansen Lighting into a company driven
+                                                  by process and systems. The following year, Jared Christensen (a licensed professional engineer) joined
+                                                  the team. Moving the store to a new location at 922 n and 1430 west in Orem allowing for more growth
+                                                  yet again. Finally, in 2008 Marshall McKinnon joined Hansen Lighting and moved the company into a
+                                                  more aggressive selling model. Over the following two years, Hansen Lighting would grow to become
+                                                  the #1 lighting provider for new construction.<br><br>
+                                                  
+                                                  <b style="font-size:12px;">The Hansen Vision enters a new world.</b>
+                                                  The combination of new technology, development of improving processes more aggressive sales while
+                                                  never letting go of the real core values that set Hansen Lighting apart all those years ago continues to
+                                                  make Hansen Lighting the one to go to with anything lighting. Hansen lighting still continues to offer
+                                                  new products to take advantage of even more growth opportunities.</div>
+                                    <br></font>  
+                                </div>
+                                <div id="content">
+                                    <font color="#0C326B">
+                                    <center style="font-size:20px; padding-top:20px;">FAQ</center>                         
+                                    <ul><b><li><a href="#hc" onclick="toggle('q1');">How does Hansen Lighting stand behind thier product?</a><br></li>
+                                    <li><a href="#hc" onclick="toggle('q2');">Where can I find an instruction sheet?</a><br></li>
+                                    <li><a href="#hc" onclick="toggle('q3');">Is my information kept private?</a><br></li>
+                                    <li><a href="#hc" onclick="toggle('q4');">How long will it take to recieve my order.</a><br></li>
+                                    <li><a href="#hc" onclick="toggle('q5');">What is the estimated delivery time?</a><br></li>
+                                    <li><a href="#hc" onclick="toggle('q6');">Where do I report a problem with your website?</a><br></li>
+                                    <li><a href="#hc" onclick="toggle('q7');">What discounts are available?</a><br></li>
+                                    <li><a href="#hc" onclick="toggle('q8');">How can I cancel my order?</a><br></li>
+                                    <li><a href="#hc" onclick="toggle('q9');">Why buy from Hansen Lighting?</a><br></li>   
+                                    <li><a href="#hc" onclick="toggle('q10');">Shipments outside of the USA?</a><br></li>
+                                    <li><a href="#hc" onclick="toggle('q12');">What Manufacturers do you provide?</a><br></li>
+                                    <li><a href="#hc" onclick="toggle('q13');">What Safety Measures do your fixtures carry?</a><br></li>                                   
+                                    <li><a href="#hc" onclick="toggle('q14');">Are your fixtures suitable for commercial use?</a><br></li>                                   
+                                    <li><a href="#hc" onclick="toggle('q15');">Do you have a Technical Support Line?</a><br></font></li></b></ul>                                                                                                           
+                                </div>
+                                
+                              </div>
+
+                            <div class="area-links-big">
+                                <div class="box">
+
+                                    <strong class="title">Browse By Category</strong>
+                                    <ul>
+                                        <li>
+                                            <a href="/chandeliers">Chandeliers</a>
+                                        </li>
+                                        <li>
+                                            <a href="/decor-home-accents">Decor</a>
+                                        </li>
+                                        <li>
+
+                                            <a href="/bathroom-fixtures">Bathroom</a>
+                                        </li>
+                                        <li>
+                                            <a href="/exterior">Outdoor</a>
+                                        </li>
+                                        <li>
+                                            <a href="/fans">Fans</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/flush-mounts">Ceiling</a>
+                                        </li>
+                                        <li>
+                                            <a href="/lamps">Lamps</a>
+                                        </li>
+                                        <li>
+
+                                            <a href="/pendants">Pendants</a>
+                                        </li>
+                                        <li>
+                                            <a href="/sconces">Sconces</a>
+                                        </li>
+                                        <li>
+                                            <a href="/island-pool-table">Island</a>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="box">
+                                    <strong class="title">Featured Searches</strong>
+                                    <ul>
+
+                                        <li>
+                                            <a href="/sconces">Lighting</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/lamps">Lamps</a>
+                                        </li>
+                                        <li>
+                                            <a href="/fans">Ceiling Fan</a>
+                                        </li>
+                                        <li>
+
+                                            <a href="/chandeliers">Chandeliers</a>
+                                        </li>
+                                        <li>
+                                            <a href="/lamps/table-lamps">Table Lamp</a>
+                                        </li>
+                                        <li>
+                                            <a href="/exterior">Outdoor Lighting</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/lamps/floor-lamps">Floor Lamps</a>
+                                        </li>
+                                        <li>
+                                            <a href="/flush-mounts">Ceiling Light</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="box">
+                                    <strong class="title">How Do I...</strong>
+                                    <ul>
+
+                                        <li>
+                                            <a href="#">Select a lamp</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Shop for outdoor lamps</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Chose a sconce</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Install a ceiling fan</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Wire a lamp</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Match lightbulbs</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Mount pendants</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Wire a desk lamp</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Fit a lighting island</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Work on bathroom lighting</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="box">
+
+                                    <strong class="title">Help Me Choose A...</strong>
+                                    <ul>
+
+                                        <li>
+                                            <a href="/lamps/floor-lamps">Floor Lamp</a>
+                                        </li>
+                                        <li>
+                                            <a href="/exterior">Outdoor Light</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/sconces">Lighting Fixture</a>
+                                        </li>
+                                        <li>
+                                            <a href="/sconces">Wall Sconce</a>
+                                        </li>
+                                        <li>
+                                            <a href="/landscape-ltg">Garden Lights</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/pendants">Pendant Lighting</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                            <div id="header">
+                            <a href="http://www.facebook.com/pages/Hansen-Lighting-Company/141685445857852"><img  id="facebook" src="http://i1183.photobucket.com/albums/x471/J-Stott-xologic/facebook-1.jpg" height="50px"></a>
+                        	<a href="http://twitter.com/hansenlighting"><img id="twitter" src="http://twitter-badges.s3.amazonaws.com/t_logo-a.png" height="50px"></a>
+                            <div class="topbar">
+                                <dl>
+                                    <dt>
+                                        Sales &amp; Support:
+                                    </dt>
+                                    <dd>
+                                        801-225-4459
+                                    </dd>
+                                </dl>
+                                <ul>
+
+                                    <li>
+                                        <a href="/login.php?createAccount=true&">Register</a>
+                                    </li>
+                                    <li>
+                                        <a href="/login.php">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="userbar">
+                                <ul>
+                                    <li class="cart">
+                                        <a href="/Cart">VIEW CART</a>
+                                    </li>
+                                </ul>
+                                <form name="catalogform" action="http://www.hansenlighting.com/index.php?fuseaction=CatalogBrowse" method='POST' class="search-form">
+                                    <fieldset>
+
+                                        <span class="text">
+                                            <input type="text" NAME="itemNumVal" ID="textNumberSearchTextBox">
+                                        </span>
+                                        <input type="submit" class="btn" value="" NAME="find_it">
+
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div id="navbar"></div>
+                            <ul id="nav">
+
+                                <li>
+                                    <a href="/lamps">Lamps</a>
+								</li>
+                                <li>
+                                    <a href="/chandeliers">Chandeliers</a>
+                                </li>
+                                <li>
+                                    <a href="/bathroom-fixtures">Bathroom</a>
+                                </li>
+                                <li>
+									<a href="/fans">Fans</a>
+                                </li>
+                                <li>
+                                    <a href="/exterior">Outdoor</a>
+                                </li>
+                                <li>
+                                    <a href="/pendants">Pendants</a>
+								</li>
+                                <li>
+                                    <a href="/sconces">Sconces</a>
+                                </li>
+                                <li>
+                                    <a href="/island-pool-table">Island</a>
+                                </li>
+                                <li>
+								    <a href="/decor-home-accents">Decor</a>
+                                </li>
+                                <li>
+                                    <a href="/furniture">Furniture</a>
+                                </li>
+                                <li>
+                                    <a href="/-clearance!">Clearance</a>
+								</li>
+                            </ul>
+                            <a class="hidden" href="#wrapper">Back to top</a>
+                        </div>
+                        <div id="footer">
+                            <p>
+                                <center>Hansen Lighting - Utah's premier lighting showroom since 1962</center>
+                            </p>
+                            <div class="footer-holder">
+                                <ul>
+                                    <li>
+                                        <a href="/helpcenter.html">about us</a>
+                                    </li>
+                                    <li>
+                                        <a href="/helpcenter.html">contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="/helpcenter.html">help</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">privacy policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="">site map</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">terms &amp; conditions</a>
+                                    </li>
+                                </ul>
+                                <span class="copyright">&copy;2010 Hansen Lighting</span>
+                                <span class="by">Powered By <a href="#">XO Lights v2</a></span>
+                            </div>
+                            <ul class="logos">
+                                <li>
+                                    <img height="60" src="http://www.hansenlighting.com/clients/hansen/images/imagesCANKYLV4.jpg" alt="logo" />
+                                </li>
+                                <li>
+                                    <img  height="60" src="http://www.hansenlighting.com/clients/hansen/images/imagesCA2NYIOQ.jpg" alt="logo" />
+                                </li>
+                                <li>
+                                    <img  height="60" src="http://64.151.254.210/images/new_images/logo04.gif" alt="logo" />
+                                </li>
+                                <li>
+                                    <img height="60" src="http://64.151.254.210/images/new_images/logo05.gif" alt="logo" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    </body>
+</html>

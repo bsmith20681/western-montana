@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* CSS Document */
+
+a, a:hover { text-decoration:none; }
+
+.dropTab { display:inline-block; cursor:pointer; z-index:10000; }
+	.dropBox { position:absolute; display:none; z-index:10000; }
+		.dropBox .dropTab { display:block; position:relative; }
+
+.activeLeft { position:absolute; top:0px; }
+	.activeRight { position:absolute; top:0px; }

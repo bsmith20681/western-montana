@@ -1,0 +1,668 @@
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    overflow-x:hidden;
+}
+
+img {
+    border: 0px;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    vertical-align: top;
+}
+
+#siteWrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#headerSection {
+    padding: 10px 0px 10px;
+}
+
+#logoImage {
+    float: left;
+    max-width: 215px;
+    max-height: 128px;
+    margin-left: 2%;
+}
+
+#rightHeadContent {
+    float: right;
+}
+
+#rightHeadContent .navBtn {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#rightHeadContent .navBtn img {
+    vertical-align: middle;
+    margin-left: 5px;
+    height: 22px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+#rightHeadContent .navBtn i {
+    margin-right: 5px;
+}
+
+#searchEngine {
+    float: right;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+#searchInputBox {
+    float: left;
+    border: 1px solid #ccc;
+    border-left: 0px;
+    background: #fff;
+    height: 30px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+#searchInputBox input {
+    border: 0px;
+    background: transparent;
+    margin: 2px;
+    padding: 6px 0px;
+    width: 300px;
+    font-size: 12px;
+    color: #000;
+}
+
+#searchSubmitBtn {
+    float: left;
+    line-height: 30px;
+    height: 30px;
+    padding: 0px 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-right: 0px;
+    border-radius: 15px 0px 0px 15px;
+    color: #000;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#searchSubmitBtn:hover {
+    color: #1f74bf;
+}
+
+#navSection {
+    border-bottom: 1px solid #ccc;
+}
+
+.navBtn {
+    display: inline-block;
+    vertical-align: top;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    padding: 0 10px;
+    color: #000;
+}
+
+.navSpacer {
+    display: inline-block;
+    vertical-align: top;
+    height: 24px;
+    width: 1px;
+    background: #ccc;
+}
+
+a .navBtn:hover {
+    color: #1f74bf;
+}
+
+#menuSection {
+    border-bottom: 2px solid #000;
+}
+
+.dropTab {
+    vertical-align: top;
+}
+
+.dropName {
+    padding: 8px 10px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.dropBox {
+    min-width: 200px;
+    border: 1px solid #333;
+    background: #f9f9f9;
+    border-top: 2px solid #333;
+    padding: 10px;
+}
+
+.dropBox .dropName {
+    color: #000;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.dropBox .dropName:hover {
+    background: #333;
+    color: #fff;
+}
+
+.dropCol {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+}
+
+.dropCol .dropName {
+    font-weight: 400;
+}
+
+.dropCol .dropTitle {
+    font-weight: 700;
+}
+
+.dropColImg {
+    border-left: 1px solid #ccc;
+    margin-left: 5px;
+    padding-left: 7px;
+    min-height: 150px;
+    width: 150px;
+}
+
+.dropColImg img {
+    width: 100%;
+}
+
+.dropColImgTitle {
+    font-weight: 700;
+    font-style: italic;
+    background: #333;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    margin-top: -5px;
+}
+
+.menuLowerPromo {
+    background: #333;
+    padding: 20px;
+    margin: 10px -11px -11px;
+    color: #fff;
+}
+
+.menuLowerTitle {
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.lowerInfoBox.widthChange {
+    width: 370px;
+}
+.lowerInfoBox {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    /*width: 100%;*/
+    width: 305px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    padding: 2px;
+}
+
+.lowerInfoBox:hover {
+    border-color: #fff;
+}
+
+.lowerInfoImg {
+    height: 107px;
+    background: #999;
+    overflow: hidden;
+}
+
+.lowerInfoImg img {
+    width: 100%;
+}
+
+.lowerInfoText {
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    background: #666;
+    text-align: center;
+}
+
+.activeDrop {
+    color: #1f74bf !important;
+    background: url(/lighting-data/images/menu_arrow.png) no-repeat center bottom;
+}
+
+.activeLeft {
+    margin-left: -200px;
+}
+
+.activeRight {
+    margin-left: 200px;
+}
+
+#bodySection {
+    min-height: 400px;
+}
+
+.bannerBox {
+    text-align: center;
+    padding: 10px 2%;
+    box-sizing: border-box;
+}
+
+.bannerBox img {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.miniBanner {
+    width: 497px;
+}
+
+#footerSection {
+    padding-bottom: 20px;
+}
+
+#footerTop {
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0px;
+    font-weight: 700;
+}
+
+#footerTop .navBtn {
+    padding: 0px 25px;
+}
+
+#footerMiddle {}
+
+.footerCol {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 270px;
+    padding: 20px;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.footerCol a {
+    color: #000;
+}
+
+.footerCol a:hover {
+    color: #1f74bf;
+}
+
+.footerBtn {
+    border: 1px solid #c00;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    background: #c00;
+    color: #fff;
+}
+
+.footerBtn:hover {
+    background: #f00;
+    border-color: #f00;
+    cursor: pointer;
+}
+
+#footerBottom {
+    border-top: 1px solid #ccc;
+    padding: 10px 0px;
+    font-size: 12px;
+}
+
+#footerBottom span {
+    padding: 0px 5px;
+}
+
+#mobileMenu {
+    display: none;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.mobileNavBtn {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    padding: .5em 0;
+    cursor: pointer;
+}
+
+.mobileNavBtn:hover {
+    color: #1f74bf;
+}
+
+.mobileNavSection {
+    display: none;
+    padding: 0 1em;
+}
+
+.bottomNav {
+    display: inline-block;
+}
+
+.hideMobile {
+    display: inline-block;
+}
+
+.activeSection {
+    display: block;
+}
+
+/*style for hamburger menu*/
+.hamburger {
+    display: none;
+}
+
+.hamburger.active .top-bar {
+    transform: rotate(45deg);
+    top: 14px;
+}
+
+.hamburger.active .middle-bar {
+    opacity: 0;
+}
+
+.hamburger.active .bottom-bar {
+    transform: rotate(135deg);
+    top: 14px;
+}
+
+.top-bar {
+    width: 22px;
+    height: 2px;
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    transition-delay: 0.1s, 0.2s;
+    transition-duration: 0.1s, 0.1s;
+    transition-timing-function: ease-in-out;
+    background-color: #000;
+    transform-origin: 11px 1px;
+}
+
+.middle-bar {
+    width: 22px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    transition-delay: 0.1s, 0.2s;
+    transition-duration: 0.1s, 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.bottom-bar {
+    width: 22px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    left: 10px;
+    top: 21px;
+    transition-delay: 0.1s, 0.2s;
+    transition-duration: 0.1s, 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+.mobileStoreNav {
+    text-transform: uppercase;
+    padding-left: 1em;
+}
+
+.dropPadding {
+    padding-left: 2em;
+    font-weight: 500;
+}
+
+#categories {
+    transform: translateX(100%);
+}
+
+#mainNav {
+    transform: translateX(-100%);
+}
+
+.activeSection {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+
+@keyframes slide-in {
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slide-in {
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+
+/*style for header in mobile*/
+
+
+@media only screen and (max-width: 902px) {
+    #searchInputBox input {
+        max-width: 150px;
+    }
+
+    .hideMobile {
+        display: none;
+    }
+
+    .rightAdjust {
+        float: right;
+    }
+
+    #rightHeadContent {
+        float: none;
+        margin: auto;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        /* padding: 20px; */
+        /* left: 11px; */
+        /* top: 85px; */
+        position: relative;
+        /* margin-right: 100%; */
+        height: 30px;
+        width: 45px;
+        margin-top: 10px;
+    }
+
+    #navSection {
+        display: none;
+    }
+
+    #menuSection {
+        display: none;
+    }
+
+    .mobileNavSection.show {
+        display: block;
+        font-size: 14px;
+        color: #000;
+    }
+
+    .rightAdjust .fa {
+        font-size: 20px;
+    }
+
+    .backBtn {
+        cursor: pointer;
+        font-size: 14px;
+        padding: 1em 0;
+        color: #1f74bf;
+    }
+
+
+}
+
+/*style for footer in mobile*/
+@media only screen and (max-width: 890px) {
+    .bottomNav {
+        width: 24%;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    #footerTop .bottomNav .navBtn {
+        width: 100%;
+        padding: 0 !important;
+        box-sizing: border-box;
+    }
+
+    #footerTop .navSpacer {
+        float: left;
+    }
+
+    .navSpacer.fiftynone.twentyfivenone {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .footerCol {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+    #footerBottom {
+        text-align: center;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 473px) {
+    .bottomNav {
+        width: 49%;
+    }
+
+    .navSpacer.fiftynone {
+        display: none;
+    }
+
+    #logoImage {
+        max-width: 100%;
+        margin: 1em 0;
+    }
+}
+
+/*Full Site Styles*/
+
+.centerWrap {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+}
+
+/*Full Site Styles*/
+
+/*Rooms Page Styles*/
+
+
+
+/*Rooms Page Styles*/
+
+/*brands page styles*/
+
+#brandWrapper {
+    padding: 20px 0 !important;
+}
+
+#brandTitleBox {
+    background-image: none !important;
+    border: 0 !important;
+    margin-bottom: -60px;
+    color: #1e385b;
+    font-weight: bold;
+    letter-spacing: 2px !important;
+    font-size: 24px !important;
+}
+
+#brandTitleBox span {
+    display: none;
+}
+
+#leftSideBrandList {
+    border: 0 !important;
+    padding-top: 60px !important;
+}
+
+.leftSideBrandBtn {
+    color: #1e385b !important;
+}
+
+.leftSideBrandBtn:hover {
+    background: transparent !important;
+    color: #2d507e !important;
+}
+
+#rightSideBrandIcons {
+    border: 0 !important;
+}
+
+.brandBoxHolder {
+    background-image: none !important;
+    border: 0 !important;
+    margin: 5px !important;
+    width: calc(33.333333% - 13px) !important;
+}
+
+/*brands page styles*/
+
+/*catalog changes styles*/
+
+.circle div {
+    visibility: hidden;
+}
+
+.circle div strong {
+    visibility: visible;
+    line-height: 5px !important;
+}
+
+.circle div:after {
+    content: 'Options';
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    visibility: visible;
+}
+
+.itemBox[item-group="true"] .groupBorders {
+    display: none;
+}
+
+/*catalog changes styles*/

@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Western Montana</title>
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css"
+  property="stylesheet" />
+
+  <link rel="stylesheet" href="/data/wm_lander/css/main.css">
+  <link rel="stylesheet" href="/data/wm_lander/css/menu-builder.css">
+  <link type="text/css" rel="stylesheet" href="/data/wm_lander/css/custom.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+ <div id="siteWrapper">
+   <div id="headerSection">
+       <a id="logoImageAnchor" href="/"><img id="logoImage" src="/data/wm_lander/images/wmllogo.png"></a>
+
+       <div id="rightHeadContent">
+           <div class="rightAdjust">
+               <a href="/contact-us">
+                   <div class="navBtn"><i class="fa fa-map-marker"></i>
+                       <div class="hideMobile">Our Stores</div>
+                   </div>
+               </a>
+               <div class="navSpacer"></div>
+               <a href="tel:14065437166">
+                   <div class="navBtn"><i class="fa fa-phone"></i>
+                       <div class="hideMobile">1.406.543.7166</div>
+                   </div>
+               </a>
+               <div class="navSpacer"></div>
+               <a href="/login.php">
+                   <div class="navBtn"><i class="fa fa-user"></i>
+                       <div class="hideMobile">Account</div>
+                   </div>
+               </a>
+           </div>
+           <div style="clear:both;"></div>
+
+           <div id="searchEngine">
+               <form name="searchForm" action="/Lighting-Fixtures&itemNumVal=" method="get" id="searchForm1-2"
+                   onsubmit="checkValue(); return false;">
+                   <div id="searchSubmitBtn" onclick="checkValue();"><i class="fa fa-search"></i></div><input
+                       type="submit" name="go" value="Join" class="submit" style="display:none;">
+                   <div id="searchInputBox">
+                       <input type="text" id="searchForm1-1" class="searchForm" name="itemNumVal"
+                           value="Keyword / Item #" onfocus="if (this.value == 'Keyword / Item #') this.value = '';"
+                           onblur="if (this.value == '') this.value = 'Keyword / Item #';">
+                   </div>
+               </form>
+           </div>
+           <div class="hamburger">
+               <div class="top-bar"></div>
+               <div class="middle-bar"></div>
+               <div class="bottom-bar"></div>
+           </div>
+       </div>
+       <div style="clear:both;"></div>
+
+   </div>
+   <div id="navSection">
+       <a href="/">
+           <div class="navBtn">Home</div>
+       </a>
+       <div class="navSpacer"></div>
+       <a href="/about-us">
+           <div class="navBtn">About Us</div>
+       </a>
+       <div class="navSpacer"></div>
+       <a href="/contact-us">
+           <div class="navBtn">Contact / Find Us</div>
+       </a>
+       <div class="navSpacer"></div>
+       <a href="/catalog">
+           <div class="navBtn">Shop</div>
+       </a>
+       <div class="navSpacer"></div>
+       <a href="/brands">
+           <div class="navBtn">Brands</div>
+       </a>
+       <div class="navSpacer"></div>
+       <div class="dropTab" data-mode="hover" data-show="show" data-show="hide" data-delay="100" data-direction="down">
+         <a href="">
+           <div class="navBtn">Blog </div>
+         </a>
+         <div class="dropBox">
+           <div class="menuLowerPromo">
+               <div class="menuLowerTitle">Ideas &amp; Insights</div>
+               <div>
+                   <div class="lowerInfoBox widthChange">
+                       <div class="lowerInfoImg" >
+                         <a id="blogLink1" href="#">
+                           <img
+                               id="blogImage1"
+                               src=""
+                               alt="improve your focus at work">
+                          </a>
+                        </div>
+                       <div class="lowerInfoText" style="line-height: 19px;" id="blogTitle1"></div>
+                   </div>
+                   <div class="lowerInfoBox widthChange">
+                       <div class="lowerInfoImg">
+                         <a id="blogLink2" href="#">
+                           <img
+                              id="blogImage2"
+                              src=""
+                              alt="Tips for Good Sleep">
+                          </a>
+                       </div>
+                       <div class="lowerInfoText" style="line-height: 19px;" id="blogTitle2"></div>
+                   </div>
+               </div>
+           </div>
+         </div>
+       </div>
+       <div class="navSpacer"></div>
+       <a href="https://info.litliving.com/wml-consultation/">
+         <div class="navBtn" style="color: #c00; font-weight: 600;">Request Consultation </div>
+       </a>
+       <div style="float:right; font-weight:700; text-transform:uppercase;">
+           <a href="/compare-items">
+               <div class="navBtn">Compare Items</div>
+           </a>
+           <div class="navSpacer"></div>
+           <a href="/wishlist">
+               <div class="navBtn">Wishlist</div>
+           </a>
+           <div class="navSpacer"></div>
+           <a href="/cart">
+               <div class="navBtn" style="color:#1f74bf;"><i class="fa fa-shopping-cart"></i> Cart</div>
+           </a>
+       </div>
+   </div>
+   <div id="mobileMenu">
+       <div class="mobileNavSection activeSection" id="mainNav">
+           <a href="/">
+               <div class="mobileNavBtn">Home</div>
+           </a>
+           <a href="/about-us">
+               <div class="mobileNavBtn">About Us</div>
+           </a>
+           <a href="/contact-us">
+               <div class="mobileNavBtn">Contact / Find Us</div>
+           </a>
+           <a href="/catalog">
+               <div class="mobileNavBtn">Gallery</div>
+           </a>
+           <div class="mobileNavBtn" onclick="changeView('categories')">Shop <i class="fa fa-angle-right"> </i>
+           </div>
+           <a href="/brands">
+               <div class="mobileNavBtn">Brands</div>
+           </a>
+           <a href="/rooms">
+               <div class="mobileNavBtn">Blog</div>
+           </a>
+           <a href="/rooms">
+               <div class="mobileNavBtn">Policies</div>
+           </a>
+
+           <div class="mobileStoreNav">
+               <a href="/compare-items">
+                   <div class="mobileNavBtn">Compare Items</div>
+               </a>
+               <a href="/wishlist">
+                   <div class="mobileNavBtn">Wishlist</div>
+               </a>
+               <a href="/cart">
+                   <div class="mobileNavBtn" style="color:#1f74bf;"><i class="fa fa-shopping-cart"></i> Cart</div>
+               </a>
+           </div>
+       </div>
+
+       <div class="mobileNavSection" id="categories">
+           <div class="backBtn" onclick="changeView('mainNav')"><i class="fa fa-angle-left"></i> Return</div>
+           <a href="/chandeliers">
+               <div class="dropName">Ceiling Fixtures</div>
+           </a>
+           <a href="/chandeliers">
+               <div class="dropName dropPadding">Chandeliers</div>
+           </a>
+           <a href="/lighting-fixtures/flush-mounts">
+               <div class="dropName dropPadding">Flush Mounts</div>
+           </a>
+           <a href="/lighting-fixtures/semi-flush-mounts">
+               <div class="dropName dropPadding">Semi-Flush Mounts</div>
+           </a>
+           <a href="/lighting-fixtures/pendants">
+               <div class="dropName dropPadding">Pendants</div>
+           </a>
+           <a href="/lighting-fixtures/sconces">
+               <div class="dropName">Wall Fixtures</div>
+           </a>
+           <a href="/lighting-fixtures/sconces">
+               <div class="dropName dropPadding">Sconces</div>
+           </a>
+           <a href="/lighting-fixtures/fans">
+               <div class="dropName">Fans</div>
+           </a>
+           <a href="/lighting-fixtures/exterior">
+               <div class="dropName">Outdoor</div>
+           </a>
+           <a href="/lighting-fixtures/landscape-ltg">
+               <div class="dropName">Landscape</div>
+           </a>
+           <a href="/lighting-fixtures/decor-home-accents">
+               <div class="dropName">Decor &amp; Home Accents</div>
+           </a>
+           <a href="/lighting-fixtures/light-bulbs">
+               <div class="dropName">Light Bulbs</div>
+           </a>
+           <a href="/lighting-fixtures">
+               <div class="dropName">Styles</div>
+           </a>
+           <a href="/bathroom-fixtures">
+               <div class="dropName">Bathroom</div>
+           </a>
+           <a href="/-sale!">
+               <div class="dropName" style="color:#c00;">Sale</div>
+           </a>
+
+
+       </div>
+   </div>
+
+   <div id="menuSection">
+       <div class="dropTab" data-mode="hover" data-show="show" data-show="hide" data-delay="100" data-direction="down">
+           <a href="/chandeliers">
+               <div class="dropName">Ceiling Fixtures</div>
+           </a>
+           <div class="dropBox">
+               <div class="dropCol">
+                   <a href="/lighting-fixtures/chandeliers">
+                       <div class="dropName dropTitle">Chandeliers</div>
+                   </a>
+                   <a href="/lighting-fixtures/chandeliers/down-chandeliers">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Down Chandeliers</div>
+                   </a>
+                   <a href="/lighting-fixtures/chandeliers/up-chandeliers">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Up Chandeliers</div>
+                   </a>
+                   <a href="/lighting-fixtures/chandeliers/drum-shade-chandeliers">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Drum Shade Chandeliers</div>
+                   </a>
+                   <a href="/lighting-fixtures/chandeliers/candle-chandeliers">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Candle Chandeliers</div>
+                   </a>
+                   <a href="/lighting-fixtures/chandeliers/chandelier-accessories">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Chandelier Accessories</div>
+                   </a>
+                   <a href="/lighting-fixtures/chandeliers/outdoor-chandeliers">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Outdoor Chandeliers</div>
+                   </a>
+               </div>
+               <div class="dropCol">
+                   <a href="/lighting-fixtures/flush-mounts">
+                       <div class="dropName dropTitle">Flush Mounts</div>
+                   </a>
+                   <a href="/lighting-fixtures/flush-mounts/bowl-flush-mounts">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Bowl Flush Mounts</div>
+                   </a>
+                   <a href="/lighting-fixtures/flush-mounts/cage-flush-mounts">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Cage Flush Mounts</div>
+                   </a>
+                   <a href="/lighting-fixtures/flush-mounts/drum-shade-flush-mounts">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Drum Shade Flush Mounts</div>
+                   </a>
+                   <a href="/lighting-fixtures/flush-mounts/keyless-porcelain-flush">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Keyless/Porcelain Flush</div>
+                   </a>
+                   <a href="/lighting-fixtures/flush-mounts/mushroom-flush-mounts">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Mushroom Flush Mounts</div>
+                   </a>
+                   <a href="/lighting-fixtures/flush-mounts/outdoor-flush-mounts">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Outdoor Flush Mounts</div>
+                   </a>
+               </div>
+               <div class="dropCol">
+                   <a href="/lighting-fixtures/semi-flush-mounts">
+                       <div class="dropName dropTitle">Semi-Flush Mounts</div>
+                   </a>
+                   <a href="/lighting-fixtures/semi-flush-mounts/bowl-semi-flush-mounts">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Bowl Semi-Flush Mounts</div>
+                   </a>
+                   <a href="/lighting-fixtures/semi-flush-mounts/cage-semi-flush-mounts">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Cage Semi-Flush Mounts</div>
+                   </a>
+                   <a href="/lighting-fixtures/semi-flush-mounts/drum-shade-semi-flush">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Drum Shade Semi-Flush</div>
+                   </a>
+                   <a href="/lighting-fixtures/semi-flush-mounts/semi-flush-mount-accessories">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Semi-Flush Mount Accessories</div>
+                   </a>
+                   <a href="/lighting-fixtures/semi-flush-mounts/school-house-semi-flush">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> School House Semi-Flush</div>
+                   </a>
+                   <a href="/lighting-fixtures/semi-flush-mounts/outdoor-flush-mounts">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Outdoor Flush Mounts</div>
+                   </a>
+               </div>
+               <div class="dropCol">
+                   <a href="/lighting-fixtures/pendants">
+                       <div class="dropName dropTitle">Pendants</div>
+                   </a>
+                   <a href="/lighting-fixtures/pendants/down-pendants">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Down Pendants</div>
+                   </a>
+                   <a href="/lighting-fixtures/pendants/up-pendants">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Up Pendants</div>
+                   </a>
+                   <a href="/lighting-fixtures/pendants/pendant-accessories">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Pendant Accessories</div>
+                   </a>
+                   <a href="/lighting-fixtures/pendants/drum-shade-pendants">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Drum Shade Pendants</div>
+                   </a>
+                   <a href="/lighting-fixtures/pendants/candle-pendants">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Candle Pendants</div>
+                   </a>
+                   <a href="/lighting-fixtures/pendants/multi-point-pendants">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Multi-Point Pendants</div>
+                   </a>
+               </div>
+               <a href="/rooms">
+                   <div class="dropCol dropColImg">
+                       <img src="/data/wm_lander/images/components/nav_images/catdrop_ceiling.jpg">
+                       <div class="dropColImgTitle">Shop by Room</div>
+                   </div>
+               </a>
+               <div style="clear:both;"></div>
+           </div>
+       </div>
+       <div class="dropTab" data-mode="hover" data-show="show" data-show="hide" data-delay="100" data-direction="down">
+           <a href="/lighting-fixtures/sconces">
+               <div class="dropName">Wall Fixtures</div>
+           </a>
+           <div class="dropBox">
+               <div class="dropCol">
+                   <a href="/lighting-fixtures/sconces">
+                       <div class="dropName dropTitle">Sconces</div>
+                   </a>
+                   <a href="/lighting-fixtures/sconces/wall-lights">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Wall Lights</div>
+                   </a>
+                   <a href="/lighting-fixtures/sconces/sconce-accessories">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Sconce Accessories</div>
+                   </a>
+                   <a href="/lighting-fixtures/sconces/outdoor-wall-lights">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Outdoor Wall Lights</div>
+                   </a>
+                   <a href="/lighting-fixtures/sconces/other-wall-lights">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Other Wall Lights</div>
+                   </a>
+                   <a href="/lighting-fixtures/sconces/picture-display-lights">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Picture Display Lights</div>
+                   </a>
+               </div>
+               <a href="/rooms">
+                   <div class="dropCol dropColImg">
+                       <img src="/data/wm_lander/images/components/nav_images/catdrop_ceiling.jpg">
+                       <div class="dropColImgTitle">Shop by Room</div>
+                   </div>
+               </a>
+               <div style="clear:both;"></div>
+           </div>
+       </div>
+       <div class="dropTab" data-mode="hover" data-show="show" data-show="hide" data-delay="100" data-direction="down">
+           <a href="/lighting-fixtures/fans">
+               <div class="dropName">Fans</div>
+           </a>
+           <div class="dropBox">
+               <div class="dropCol">
+                   <a href="/lighting-fixtures/fans">
+                       <div class="dropName dropTitle">Fans</div>
+                   </a>
+                   <a href="/lighting-fixtures/fans/wall-fans">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Wall Fans</div>
+                   </a>
+                   <a href="/lighting-fixtures/fans/huggers">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Huggers</div>
+                   </a>
+                   <a href="/lighting-fixtures/fans/outdoor-fans">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Outdoor fans</div>
+                   </a>
+                   <a href="/lighting-fixtures/fans/ceiling-fans">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Ceiling Fans</div>
+                   </a>
+                   <a href="/lighting-fixtures/fans/dual-motor-fans">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Dual Motor Fans</div>
+                   </a>
+                   <a href="/lighting-fixtures/fans/fan-motor-without-blades">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Fan Motor Without Blades</div>
+                   </a>
+               </div>
+               <a href="/rooms">
+                   <div class="dropCol dropColImg">
+                       <img src="/data/wm_lander/images/components/nav_images/catdrop_ceiling.jpg">
+                       <div class="dropColImgTitle">Shop by Room</div>
+                   </div>
+               </a>
+               <div style="clear:both;"></div>
+           </div>
+       </div>
+       <div class="dropTab" data-mode="hover" data-show="show" data-show="hide" data-delay="100" data-direction="down">
+           <a href="/lighting-fixtures/exterior">
+               <div class="dropName">Outdoor</div>
+           </a>
+           <div class="dropBox">
+               <div class="dropCol">
+                   <a href="/lighting-fixtures/exterior">
+                       <div class="dropName dropTitle">Exterior</div>
+                   </a>
+                   <a href="/lighting-fixtures/exterior/deck-lights">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Deck Lights</div>
+                   </a>
+                   <a href="/lighting-fixtures/exterior/hanging-lanterns">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Hanging Lanterns</div>
+                   </a>
+                   <a href="/lighting-fixtures/exterior/post-mount-lights">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Post Mount Lights</div>
+                   </a>
+                   <a href="/lighting-fixtures/exterior/posts">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Posts</div>
+                   </a>
+                   <a href="/lighting-fixtures/exterior/address-numbers">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Address Numbers</div>
+                   </a>
+                   <a href="/lighting-fixtures/exterior/outdoor-fountains">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Outdoor Fountains</div>
+                   </a>
+               </div>
+               <div class="dropCol">
+                   <a href="/lighting-fixtures/exterior/pier-mounts">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Pier Mounts</div>
+                   </a>
+                   <a href="/lighting-fixtures/exterior/mail-boxes">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Mail Boxes</div>
+                   </a>
+                   <a href="/lighting-fixtures/exterior/marine-lights">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Marine Lights</div>
+                   </a>
+                   <a href="/lighting-fixtures/exterior/wall-lanterns">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Wall Lanterns</div>
+                   </a>
+                   <a href="/lighting-fixtures/exterior/solar-lights">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Solar Lights</div>
+                   </a>
+                   <a href="/lighting-fixtures/exterior/exterior-accessories">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Exterior Accessories</div>
+                   </a>
+                   <a href="/lighting-fixtures/exterior/pier-mount-lights">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Pier Mount Lights</div>
+                   </a>
+               </div>
+               <a href="/rooms">
+                   <div class="dropCol dropColImg">
+                       <img src="/data/wm_lander/images/components/nav_images/catdrop_ceiling.jpg">
+                       <div class="dropColImgTitle">Shop by Room</div>
+                   </div>
+               </a>
+               <div style="clear:both;"></div>
+           </div>
+       </div>
+       <div class="dropTab" data-mode="hover" data-show="show" data-show="hide" data-delay="100" data-direction="down">
+           <a href="/lighting-fixtures/landscape-ltg">
+               <div class="dropName">Landscape</div>
+           </a>
+           <div class="dropBox">
+               <div class="dropCol">
+                   <a href="/lighting-fixtures/landscape-ltg">
+                       <div class="dropName dropTitle">Landscape Lighting</div>
+                   </a>
+                   <a href="/lighting-fixtures/landscape-ltg/path-lights">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Path Lights</div>
+                   </a>
+                   <a href="/lighting-fixtures/landscape-ltg/well-lights">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Well Lights</div>
+                   </a>
+                   <a href="/lighting-fixtures/landscape-ltg/landscape-accessories">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Landscape Accessories</div>
+                   </a>
+                   <a href="/lighting-fixtures/landscape-ltg/spot-lights">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Spot Lights</div>
+                   </a>
+                   <a href="/lighting-fixtures/landscape-ltg/other-landscape-lighting">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Other Landscape Lighting</div>
+                   </a>
+                   <a href="/lighting-fixtures/landscape-ltg/step-lights">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Step Lights</div>
+                   </a>
+               </div>
+               <a href="/rooms">
+                   <div class="dropCol dropColImg">
+                       <img src="/data/wm_lander/images/components/nav_images/catdrop_ceiling.jpg">
+                       <div class="dropColImgTitle">Shop by Room</div>
+                   </div>
+               </a>
+               <div style="clear:both;"></div>
+           </div>
+       </div>
+       <div class="dropTab" data-mode="hover" data-show="show" data-show="hide" data-delay="100" data-direction="down">
+           <a href="/lighting-fixtures/decor-home-accents">
+               <div class="dropName">Decor &amp; Home Accents</div>
+           </a>
+           <div class="dropBox" style="margin-left:-282px;">
+               <div class="dropCol">
+                   <a href="/lighting-fixtures/decor-home-accents/bookends">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Bookends</div>
+                   </a>
+                   <a href="/lighting-fixtures/decor-home-accents/bowls">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Bowls</div>
+                   </a>
+                   <a href="/lighting-fixtures/decor-home-accents/boxes">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Boxes</div>
+                   </a>
+                   <a href="/lighting-fixtures/decor-home-accents/candle-holders">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Candle Holders</div>
+                   </a>
+                   <a href="/lighting-fixtures/decor-home-accents/chargers">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Chargers</div>
+                   </a>
+                   <a href="/lighting-fixtures/decor-home-accents/pictures">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Pictures</div>
+                   </a>
+                   <a href="/lighting-fixtures/decor-home-accents/shelves">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Shelves</div>
+                   </a>
+               </div>
+               <div class="dropCol">
+                   <a href="/lighting-fixtures/decor-home-accents/trays">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Trays</div>
+                   </a>
+                   <a href="/lighting-fixtures/decor-home-accents/vases">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Vases</div>
+                   </a>
+                   <a href="/lighting-fixtures/decor-home-accents/mirrors">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Mirrors</div>
+                   </a>
+                   <a href="/lighting-fixtures/decor-home-accents/robe-hooks">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Robe Hooks</div>
+                   </a>
+                   <a href="/lighting-fixtures/decor-home-accents/towel-holders">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Towel Holders</div>
+                   </a>
+                   <a href="/lighting-fixtures/decor-home-accents/soap-dishes">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Soap Dishes</div>
+                   </a>
+                   <a href="/lighting-fixtures/decor-home-accents/candles">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Candles</div>
+                   </a>
+               </div>
+               <div class="dropCol">
+                   <a href="/lighting-fixtures/decor-home-accents/sculptures">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Sculptures</div>
+                   </a>
+                   <a href="/lighting-fixtures/decor-home-accents/planters">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Planters</div>
+                   </a>
+                   <a href="/lighting-fixtures/decor-home-accents/wall-art">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Wall Art</div>
+                   </a>
+                   <a href="/lighting-fixtures/decor-home-accents/indoor-fountains">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Indoor Fountains</div>
+                   </a>
+                   <a href="/lighting-fixtures/decor-home-accents/photo-picture-frames">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Photo Picture Frames</div>
+                   </a>
+                   <a href="/lighting-fixtures/decor-home-accents/paper-holders">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Paper Holders</div>
+                   </a>
+                   <a href="/lighting-fixtures/decor-home-accents/plates">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Plates</div>
+                   </a>
+               </div>
+               <a href="/rooms">
+                   <div class="dropCol dropColImg">
+                       <img src="/data/wm_lander/images/components/nav_images/catdrop_ceiling.jpg">
+                       <div class="dropColImgTitle">Shop by Room</div>
+                   </div>
+               </a>
+               <div style="clear:both;"></div>
+           </div>
+       </div>
+       <div class="dropTab" data-mode="hover" data-show="show" data-show="hide" data-delay="100" data-direction="down">
+           <a href="/lighting-fixtures/light-bulbs">
+               <div class="dropName">Light Bulbs</div>
+           </a>
+           <div class="dropBox" style="margin-left:-261px;">
+               <div class="dropCol">
+                   <a href="/lighting-fixtures/light-bulbs/compact-fluorescent-(CFL)">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Compact Fluorescent (CFL)</div>
+                   </a>
+                   <a href="/lighting-fixtures/light-bulbs/full-spectrum-bulbs">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Full Spectrum Bulbs</div>
+                   </a>
+                   <a href="/lighting-fixtures/light-bulbs/halogen-bulbs">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Halogen Bulbs</div>
+                   </a>
+                   <a href="/lighting-fixtures/light-bulbs/incandescent-bulbs">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Incandescent Bulbs</div>
+                   </a>
+                   <a href="/lighting-fixtures/light-bulbs/led-bulbs">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> LED Bulbs</div>
+                   </a>
+                   <a href="/lighting-fixtures/light-bulbs/metal-halide-bulbs">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Metal Halide Bulbs</div>
+                   </a>
+               </div>
+               <div class="dropCol">
+                   <a href="/lighting-fixtures/light-bulbs/flood-bulbs">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Flood Bulbs</div>
+                   </a>
+                   <a href="/lighting-fixtures/light-bulbs/fluorescent-light-bulbs">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Flourescent Light Bulbs</div>
+                   </a>
+                   <a href="/lighting-fixtures/light-bulbs/horticulture-bulbs">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Horticulture Bulbs</div>
+                   </a>
+                   <a href="/lighting-fixtures/light-bulbs/xenon-light-bulbs">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Xenon Light Bulbs</div>
+                   </a>
+                   <a href="/lighting-fixtures/light-bulbs/krypton-light-bulbs">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Krypton Light Bulbs</div>
+                   </a>
+                   <a href="/lighting-fixtures/light-bulbs/candelabra-bulbs">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Candelabra Bulbs</div>
+                   </a>
+               </div>
+               <a href="/rooms">
+                   <div class="dropCol dropColImg">
+                       <img src="/data/wm_lander/images/components/nav_images/catdrop_ceiling.jpg">
+                       <div class="dropColImgTitle">Shop by Room</div>
+                   </div>
+               </a>
+               <div style="clear:both;"></div>
+           </div>
+       </div>
+       <div class="dropTab" data-mode="hover" data-show="show" data-show="hide" data-delay="100" data-direction="down">
+           <a href="/lighting-fixtures">
+               <div class="dropName">Styles</div>
+           </a>
+           <div class="dropBox" style="margin-left:-158px;">
+               <div class="dropCol">
+                   <a href="/lighting-fixtures/contemporary">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Contemporary</div>
+                   </a>
+                   <a href="/lighting-fixtures/craftsman-mission">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Craftsman/Mission</div>
+                   </a>
+                   <a href="/lighting-fixtures/crystal">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Crystal</div>
+                   </a>
+                   <a href="/lighting-fixtures/kids">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Kids</div>
+                   </a>
+                   <a href="/lighting-fixtures/tiffany">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Tiffany</div>
+                   </a>
+                   <a href="/lighting-fixtures/traditional">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Traditional</div>
+                   </a>
+                   <a href="/lighting-fixtures/country-rustic">
+                       <div class="dropName"><i class="fa fa-angle-right"></i> Country/Rustic</div>
+                   </a>
+               </div>
+               <a href="/rooms">
+                   <div class="dropCol dropColImg">
+                       <img src="/data/wm_lander/images/components/nav_images/catdrop_ceiling.jpg">
+                       <div class="dropColImgTitle">Shop by Room</div>
+                   </div>
+               </a>
+               <div style="clear:both;"></div>
+           </div>
+       </div>
+       <div class="dropTab" data-mode="hover" data-show="show" data-show="hide" data-delay="100" data-direction="down">
+           <a href="/bathroom-fixtures">
+               <div class="dropName">Bathroom</div>
+           </a>
+       </div>
+       <div class="dropTab" data-mode="hover" data-show="show" data-show="hide" data-delay="100" data-direction="down">
+           <a href="/-sale!">
+               <div class="dropName" style="color:#c00;">Sale</div>
+           </a>
+           <div class="dropBox" style="margin-left:-57px;">
+               <a href="/-factory-sale">
+                   <div class="dropName"><i class="fa fa-tag"></i> Factory Sale</div>
+               </a>
+               <a href="/-overstock">
+                   <div class="dropName"><i class="fa fa-tag"></i> Overstock</div>
+               </a>
+               <a href="/-best-sellers">
+                   <div class="dropName"><i class="fa fa-tag"></i> Best Sellers</div>
+               </a>
+               <a href="/-discontinued">
+                   <div class="dropName"><i class="fa fa-tag"></i> Discontinued</div>
+               </a>
+           </div>
+       </div>
+   </div>
+ </div>
+ <!-- END OF NAVIGATION -->
+
+<div id="bodySection">
+
+
+
+  <div class="container full-xs">
+      <div>
+        <img src="/data/wm_lander/images/components/top_banner/top_banner_1.jpg"  class="img-fluid" alt="Our Prices are Always Lower.">
+      </div>
+
+  		<div class="my-2">
+  			<a href="#">
+  				<img src="/data/wm_lander/images/components/hero_banner/hero_banner_1.jpg" alt="" class="img-fluid">
+  			</a>
+  		</div>
+
+  		<section class="py-3 text-red text-uppercase">
+  			<img src="/data/wm_lander/images/images-optimized/price-match-banner.jpg"
+  				alt="Our prices are always lower. Ask us about our famous internet price-match plus guarantee for lighting products!"
+  				class="img-fluid">
+  		</section>
+
+  		<section class="py-4">
+  			<div class="row m-0 align-items-center">
+  				<div class="col-md-6 p-0">
+  					<img src="/data/wm_lander/images/images-optimized/wml-safe-lightbulbs.jpg" alt="Safe Light Bulbs" class="img-fluid">
+  				</div>
+  				<div class="col-md-6 p-0">
+  					<div class="bg-beige p-4">
+  						<div class="gc gc-center"></div>
+  						<h2 class="font-orpheus text-center font-size-40">
+  							Discover the Safest <br><span style="color: #7F9F22;">Light Bulbs</span> for Your Home
+  						</h2>
+  						<p class="text-center">
+  							Use these 4 types of light bulbs
+  							<br />
+  							to make your home safer
+  						</p>
+  						<p class="text-center">
+  							<a href="#" class="text-dark-blue text-uppercase font-size-18">
+  								<i class="fa fa-chevron-right"></i>
+  								<strong>Learn More</strong>
+  							</a>
+  						</p>
+  					</div>
+  				</div>
+  			</div>
+  		</section>
+
+  		<div class="my-2">
+  			<a href="#">
+  				<img src="/data/wm_lander/images/components/hero_banner/hero_banner_3.jpg" alt="Healthy Lighting, for Happier Living. Every year Denmark ranks as the Happiest country on Earth. Find out why" class="img-fluid">
+  			</a>
+  		</div>
+
+  		<section>
+  			<div class="gc gc-center"></div>
+  			<h2 class="font-orpheus text-center text-uppercase">
+  				Shop by Room
+  			</h2>
+  			<div class="row grey-card-section">
+  				<div class="col-md-4">
+  					<a href="/room/bedroom" class="card">
+  						<img src="/data/wm_lander/images/images-optimized/Bedroom.jpg" class="img-fluid">
+              <p class="card-title">Bedroom</p>
+  					</a>
+  				</div>
+  				<div class="col-md-4">
+  					<a href="/room/family-great-room" class="card">
+  						<img src="/data/wm_lander/images/images-optimized/Family_Room.jpg" class="img-fluid">
+              <p class="card-title">Family Room</p>
+  					</a>
+  				</div>
+  				<div class="col-md-4">
+  					<a href="/room/dining-room" class="card">
+  						<img src="/data/wm_lander/images/images-optimized/Dining_Room.jpg" class="img-fluid">
+              <p class="card-title">Dining Room</p>
+  					</a>
+  				</div>
+  				<div class="col-md-4">
+  					<a href="/room/kitchen" class="card">
+  						<img src="/data/wm_lander/images/images-optimized/kitchen.jpg" class="img-fluid">
+              <p class="card-title">Kitchen</p>
+  					</a>
+  				</div>
+  				<div class="col-md-4">
+  					<a href="/room/bathroom" class="card">
+  						<img src="/data/wm_lander/images/images-optimized/bathroom.jpg" class="img-fluid">
+              <p class="card-title">Bathroom</p>
+  					</a>
+  				</div>
+  				<div class="col-md-4">
+  					<a href="/room/outdoor-patio" class="card">
+  						<img src="/data/wm_lander/images/images-optimized/exterior.jpg" class="img-fluid">
+              <p class="card-title">Outdoor</p>
+  					</a>
+  				</div>
+  			</div>
+  		</section>
+
+
+  		<section class="py-4">
+  			<div class="row m-0 align-items-center">
+  				<div class="col-md-6 p-0">
+  					<img src="/data/wm_lander/images/images-optimized/wml-ceilingfanguide.jpg" class="img-fluid">
+  				</div>
+  				<div class="col-md-6 p-0">
+  					<div class="bg-beige p-4 text-center">
+  						<div class="gc gc-center"></div>
+  						<h2 class="font-orpheus font-size-40">
+  							<span style="color: #9A4A0F">The Ultimate Guide:</span> How to Buy the <span style="color: #9A4A0F">Perfect</span> Ceiling Fan
+  						</h2>
+  						<p>
+  							Everything you need to know and more about how to find the perfect ceiling fan.
+  						</p>
+  						<p class="text-center">
+  							<a href="#" class="text-dark-blue text-uppercase font-size-18">
+  								<i class="fa fa-chevron-right"></i>
+  								<strong>learn more</strong>
+  							</a>
+  						</p>
+  					</div>
+  				</div>
+  			</div>
+  		</section>
+
+      <section>
+        <div class="cta-large">
+          <a href="/catalog" class="cta-large-title">
+            <h2>
+              <i class="fa fa-chevron-right"></i>
+              Request
+              <strong class="no-wrap">Consultation</strong>
+            </h2>
+          </a>
+        </div>
+      </section>
+
+
+      <section>
+        <div class="py-4">
+          <a href="/lighting-fixtures/pendants">
+            <img src="/data/wm_lander/images/images-optimized/shop-kitchen-catalog.jpg"
+              alt="Pendants Bring Style with a Smile -- Mini & mid-sized Pendants can make any space more inviting. Explore & Discover"
+              class="img-fluid">
+          </a>
+        </div>
+      </section>
+
+
+
+  		<section>
+  			<div class="gc gc-center"></div>
+  			<h2 class="font-orpheus text-center text-uppercase">
+  				Gallery
+  			</h2>
+  			<div class="row">
+  				<div class="col-8 mb-30px">
+  					<a href="/brand-savoy-house">
+  						<img src="/data/wm_lander/images/images-optimized/1.jpg" alt="Gallery: lighting by Savoy House" class="img-fluid">
+  					</a>
+  				</div>
+  				<div class="col-4 mb-30px">
+  					<a href="/brand-capital">
+  						<img src="/data/wm_lander/images/images-optimized/2.jpg" alt="Gallery: lighting by Capital" class="img-fluid">
+  					</a>
+  				</div>
+  				<div class="col-4 mb-30px">
+  					<a href="/brand-capital">
+  						<img src="/data/wm_lander/images/images-optimized/3.jpg" alt="Gallery: lighting by Capital" class="img-fluid">
+  					</a>
+  				</div>
+  				<div class="col-8 mb-30px">
+  					<a href="/brand-savoy-house">
+  						<img src="/data/wm_lander/images/images-optimized/4.jpg" alt="Gallery: lighting by Savoy House" class="img-fluid">
+  					</a>
+  				</div>
+  				<div class="col-4 mb-30px">
+  					<a href="/brand-capital">
+  						<img src="/data/wm_lander/images/images-optimized/5.jpg" alt="Gallery: lighting by Capital" class="img-fluid">
+  					</a>
+  				</div>
+  				<div class="col-4 mb-30px">
+  					<a href="/brand-capital">
+  						<img src="/data/wm_lander/images/images-optimized/6.jpg" alt="Gallery: lighting by Capital" class="img-fluid">
+  					</a>
+  				</div>
+  				<div class="col-4 mb-30px">
+  					<a href="/brand-capital">
+  						<img src="/data/wm_lander/images/images-optimized/7.jpg" alt="Gallery: lighting by Capital" class="img-fluid">
+  					</a>
+  				</div>
+  				<div class="col-8 mb-30px">
+  					<a href="/brand-capital">
+  						<img src="/data/wm_lander/images/images-optimized/8.jpg" alt="Gallery: lighting by Capital" class="img-fluid">
+  					</a>
+  				</div>
+  				<div class="col-4 mb-30px">
+  					<a href="/brand-savoy-house">
+  						<img src="/data/wm_lander/images/images-optimized/9.jpg" alt="Gallery: lighting by Savoy House" class="img-fluid">
+  					</a>
+  				</div>
+  				<div class="col-4 mb-30px">
+  					<a href="/brand-capital">
+  						<img src="/data/wm_lander/images/images-optimized/10.jpg" alt="Gallery: lighting by Capital" class="img-fluid">
+  					</a>
+  				</div>
+  				<div class="col-8 mb-30px">
+  					<a href="/brand-capital">
+  						<img src="/data/wm_lander/images/images-optimized/11.jpg" alt="Gallery: lighting by Capital" class="img-fluid">
+  					</a>
+  				</div>
+  				<div class="col-4 mb-30px">
+  					<a href="/brand-hinkley">
+  						<img src="/data/wm_lander/images/images-optimized/12.jpg" alt="Gallery: lighting by Hinkley" class="img-fluid">
+  					</a>
+  				</div>
+  				<div class="col-4 mb-30px">
+  					<a href="/brand-capital">
+  						<img src="/data/wm_lander/images/images-optimized/13.jpg" alt="Gallery: lighting by Capital" class="img-fluid">
+  					</a>
+  				</div>
+  				<div class="col-4 mb-30px">
+  					<a href="/brand-capital">
+  						<img src="/data/wm_lander/images/images-optimized/14.png" alt="Gallery: lighting by Capital" class="img-fluid">
+  					</a>
+  				</div>
+  			</div>
+  		</section>
+
+
+
+
+  <!-- FOOTER -->
+      <div id="footerSection">
+      	<div id="footerTop">
+          	<div class="bottomNav"><a href="/"><div class="navBtn">Home</div></a></div>
+              <div class="navSpacer"></div>
+              <div class="bottomNav"><a href="/about-us"><div class="navBtn">About Us</div></a></div>
+              <div class="navSpacer fiftynone"></div>
+              <div class="bottomNav"><a href="/contact-us"><div class="navBtn">Contact / Find Us</div></a></div>
+              <div class="navSpacer"></div>
+              <div class="bottomNav"><a href="/page-gallery.html"><div class="navBtn">Gallery</div></a></div>
+              <div class="navSpacer fiftynone twentyfivenone"></div>
+              <div class="bottomNav"><a href="/catalog"><div class="navBtn">Catalog</div></a></div>
+              <div class="navSpacer"></div>
+              <div class="bottomNav"><a href="/brands"><div class="navBtn">Brands</div></a></div>
+              <div class="navSpacer fiftynone"></div>
+              <div class="bottomNav"><a href="/rooms"><div class="navBtn">Rooms</div></a></div>
+              <div class="navSpacer"></div>
+              <div class="bottomNav"><a href="#"><div class="navBtn" style="color: #c00;">Ideas &amp; Advice</div></a></div>
+          <div style="clear: both;"></div>
+          </div>
+          <div id="footerMiddle">
+          	<div class="footerCol" style="font-size:16px;">
+              	<!-- <strong style="color:#c00;">Get it first.</strong> Sign up now for up to the minute offers, sales and news. -->
+                  <a href="#"><div class="footerBtn">Ideas &amp; Advice</div></a>
+              </div>
+              <div class="footerCol">
+              	<a href="/login.php">Log In</a><br>
+                  <a href="/cart">Shopping Cart</a><br>
+                  <a href="/wishlist">Wishlist</a><br>
+                  <a href="/compare-items">Compare Items</a><br>
+              </div>
+              <div class="footerCol">
+              	<a href="/policy/shipping">Shipping Policy</a><br>
+                  <a href="/policy/privacy">Privacy Policy</a><br>
+                  <a href="/policy/return">Return Policy</a><br>
+                  <a href="/policy/terms">Terms &amp; Conditions</a><br>
+              </div>
+              <div class="footerCol">
+              	<strong>Store Location</strong><br>
+                  6250 South Reserve Street<br>
+  				        Missoula, MT 59801<br>
+                  Phone #: (406) 543-7166<br>
+              </div>
+              <div class="footerCol">
+              	<strong>Showroom Hours</strong><br>
+                  Friday: 9am - 5:30pm<br>
+                  Saturdays: 10am - 4pm<br>
+                  Sunday: Closed
+              </div>
+          </div>
+          <div id="footerBottom">
+          	&copy <span id="year">2018</span> Western Montana. All Rights Reserved
+          </div>
+      </div>
+    </div>
+
+  <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+
+
+  <div id="newsletterPopBox" class="transPopup" data-width="300px" data-position="3%" data-header="Newsletter Signup" data-function="formMailer" data-function-var="newsletterForm">
+  	<div style="padding:25px;">
+          <div id="newsletterForm" data-account="" data-service="" data-action="/FormMailer.php" data-subject="Newsletter Signup Submission" data-message="Thank you! You have been added to our newsletter mailing list" data-redirect="/" data-submit-total="disabled" data-mode="default" data-html-links="disabled" data-format="text">
+              <div class="inputContainer" data-input-max="450px" data-input-min="250px" data-spacing="5px" data-focus-color="#000" data-blur-color="#999" data-focus-bg="#fff" data-blur-bg="#fff" data-focus-border="#666" data-blur-border="#ccc">
+                  <div class="formBox" data-group="true">
+                      <div class="formInput" data-type="text" data-title="Name" data-placeholder="Enter Name" data-predefined="" data-required="true" data-include="true" data-icon="user"></div>
+                  </div>
+                  <div class="formBox" data-group="true">
+                      <div class="formInput" data-type="sender" data-title="Email" data-placeholder="Enter Email" data-predefined="" data-required="true" data-include="true" data-icon="envelope"></div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+
+  <!-- END OF FOOTER -->
+
+  <!-- JAVASCRIPT -->
+
+  <script src="/data/wm_lander/javascript/jquery-1.4.2.min.js"></script>
+  <script src="/data/wm_lander/javascript/menu-builder.js"></script>
+
+</body>
+</html>
