@@ -719,3 +719,47 @@ h1 {
 	font-size: 24px;
 	cursor: pointer;
 }
+
+/* css for membership icons near footer */
+.membership-icons {
+	justify-content: space-around;
+	display:flex;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+#nabh {
+	width: 110px;
+	height: 83px;
+}
+
+#mbia {
+	width:110px;
+	height: 77px;
+}
+
+#bbb {
+	width: 59px;
+	height: 96px;
+}
+
+#ala {
+	width: 110px;
+	height: 78px;
+}
+
+#bbia {
+	width: 125px;
+	height: 40px;
+}
+
+#hbia {
+	width: 100px;
+	height: 75px;
+}
+
+#lightingOne {
+	width: 150px;
+	height: 35px;
+}
